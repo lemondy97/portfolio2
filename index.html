@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        ul, ol, li { list-style: none; margin: 0; padding: 0; }
+        a { text-decoration: none; }
+        header a:visited { color: #fff; }
+        section a:visited { color: #fff; }
+
+        #wrap { width: 1920px; height: auto; margin: 0 auto;  }
+        header { width: 100%; height: 200px; margin: 0 auto; color: #fff; position: absolute; z-index: 6; top: 0; left: 0; right: 0; }
+        header .main_subject { width: 300px; height: 100px; font-size: 80px; float: left; }
+        header #menu { width: 500px; display: flex; justify-content: space-between; float: right; }
+
+        #slider { width: 100%; height: 1280px; margin: 0 auto; text-align: center;
+                  background-image: url(img/main/Louvre_slider1.jpg); background-size: cover; background-position: center; }
+        /* #slider .main_rotating_image { width: 100%; height: 1280px; } */
+        #slider .blank_space { width: 200px; height: 150px; float: left;  }
+        #slider #reservation_space { width: 1160px; height: 150px; position: absolute; top: 1000px; left: 0; background: rgba(221, 160, 221, 0.5); color: #333; }
+        #slider .rv_menu { width: 960px; height: 150px; display: flex; justify-content: center; align-items: center; }
+        #slider .rv_box { width: 225px; height: 100px; margin-left: 25px; background-color: honeydew; }
+        #slider .rv_payment { width: 225px; height: 150px; background-color: #222; margin-left: 25px; color: #fff; }
+        .rv_payment button { width: 100px; height: 50px; }
+
+        section { width: 100%; height: 1000px; margin: 0 auto; text-align: center; }
+        section .louvre_wings { width: 1500px; height: 333px; text-align: center; display: flex; margin-left: 230px; justify-content: space-between; font-weight: bold;
+                                font-size: 20px; }
+        .wing_image1, .wing_image2, .wing_image3 { cursor: pointer; transition: all 1.5s ease; background-size: cover; background-position: center; }
+        .wing_image1 { width: 33%; background-image: url(img/main/richelieu_wing.jpg); }
+        .wing_image2 { width: 34%; background-image: url(img/main/denon_wing.jpeg); }
+        .wing_image3 { width: 33%; background-image: url(img/main/sully_wing.jpg); }
+        .wing_image1:hover, .wing_image2:hover, .wing_image3:hover { opacity: 0.7; }
+        section .welcome { font-size: 22px; }
+        section .section_subject { font-size: 45px; }
+        section .famous_room { width: 1500px; height: 300px; display: flex; justify-content: center; margin-left: 230px; }
+        .famous1, .famous2, .famous3, .famous4, .famous5 { background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; }
+        section .famous1 { width: 20%;  background-image: url(img/main/Napoleon_III_salon.jpg); }
+        section .famous2 { width: 20%; background-image: url(img/main/Louis_XIV_room.jpg); }
+        section .famous3 { width: 20%; background-image: url(img/main/epyption_hall.jpg); }
+        section .famous4 { width: 20%; background-image: url(img/main/renaissance_painting.jpg); }
+        section .famous5 { width: 20%; background-image: url(img/main/french_painting.jpg); }
+        .famous1:hover, .famous2:hover, .famous3:hover, .famous4:hover, .famous5:hover { opacity: 0.7; }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+            <div id="slider">
+                <div class="main_rotating_image">
+                    
+                </div>
+                <header>
+                    <h1 class="main_subject"><a href="#">Louvre</a></h1>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Explore</a></li>
+                            <li><a href="#">What's on</a></li>
+                            <li><a href="#">Home</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div id="reservation_space">
+                    <div class="blank_space"></div>
+                    <div class="rv_menu">                        
+                        <div class="rv_box">Select date</div>
+                        <div class="rv_box">Sign up audio duide book</div>
+                        <div class="rv_box">Guide tour service</div>
+                        <div class="rv_payment">
+                            <p>payment</p>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+       
+
+
+
+        <section>
+            <div class="louvre_wings">
+                <div class="wing_image1"><a href="#">Richelieu wing</a></div>
+                <div class="wing_image2"><a href="#">Denon wing</a></div>
+                <div class="wing_image3"><a href="#">Sully_wing</a></div>
+            </div>
+            <p class="welcome">Welcome to Louvre Museum</p>
+            <h1 class="section_subject">The Halls of Famous Treasures</h1>
+
+            <div class="famous_room">
+                <div class="famous1"></div>
+                <div class="famous2"></div>
+                <div class="famous3"></div>
+                <div class="famous4"></div>
+                <div class="famous5"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
