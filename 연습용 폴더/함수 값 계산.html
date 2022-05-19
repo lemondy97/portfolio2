@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr2 = [20, 77, 50, 40, 10, 55];
+
+        function min1(ele){
+            let min = 100;
+
+            for(var i = 0; i < ele.length; i++){
+                if(min > ele[i]){min = ele[i]}
+            }
+            return(min);
+        }
+
+        function max1(ele){
+            let max = 0;
+
+            for(var i=0; i < ele.length; i++){
+                if(max < ele[i]){ max = ele[i]; }
+            }
+            return(max);
+        }
+
+        function sum1(ele){
+            var sum = 0;
+            var avg = 0.0;
+
+            for(var i = 0; i < ele.length; i++){
+                sum+= ele[i];
+            }
+            return(sum);
+        }
+
+        function avg1(ele){
+            var sum = 0;
+            var avg = 0.0;
+
+            for(var i = 0; i< ele.length; i++){
+                sum+= ele[i]
+            }
+            avg = sum/ele.length;
+            return(avg);
+        }
+
+        function scores(ele){
+            var min_value = min1(ele);
+            var max_value = max1(ele);
+            var sum_value = sum1(ele);
+            var avg_value = avg1(ele);
+        
+
+        document.write('최소값='+min_value+'<br>');
+        document.write('최대값='+max_value+'<br>');
+        document.write('합계='+sum_value+'<br>');
+        document.write('평균값='+avg_value);
+        return;
+                }
+
+                scores(arr2);
+    </script>
+</body>
+</html>

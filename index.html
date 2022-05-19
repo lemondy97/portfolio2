@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * { margin: 0; padding: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         ul, ol, li { list-style: none; margin: 0; padding: 0; }
         a { text-decoration: none; }
         header a:visited { color: #fff; }
@@ -21,15 +21,18 @@
                   background-image: url(img/main/Louvre_slider1.jpg); background-size: cover; background-position: center; }
         /* #slider .main_rotating_image { width: 100%; height: 1280px; } */
         #slider .blank_space { width: 200px; height: 150px; float: left;  }
-        #slider #reservation_space { width: 1160px; height: 150px; position: absolute; top: 1000px; left: 0; background: rgba(221, 160, 221, 0.5); color: #333; }
+        #slider #reservation_space { width: 1160px; height: 150px; position: absolute; top: 1000px; 
+                                     left: 0; background: rgba(221, 160, 221, 0.5); color: #333; }
         #slider .rv_menu { width: 960px; height: 150px; display: flex; justify-content: center; align-items: center; }
         #slider .rv_box { width: 225px; height: 100px; margin-left: 25px; background-color: honeydew; }
         #slider .rv_payment { width: 225px; height: 150px; background-color: #222; margin-left: 25px; color: #fff; }
         .rv_payment button { width: 100px; height: 50px; }
 
-        section { width: 100%; height: 1000px; margin: 0 auto; text-align: center; }
-        section .louvre_wings { width: 1500px; height: 333px; text-align: center; display: flex; margin-left: 230px; justify-content: space-between; font-weight: bold;
-                                font-size: 20px; }
+        section { width: 100%; height: 850px; margin: 0 auto; text-align: center; }
+        section .louvre_wings { width: 1500px; height: 333px; text-align: center; display: flex; margin-left: 230px; 
+                                justify-content: space-between; font-weight: bold; color: #fff;
+                                font-size: 20px; position: relative; }
+        .louvre_wings .titles { position: absolute; bottom: 10px; }
         .wing_image1, .wing_image2, .wing_image3 { cursor: pointer; transition: all 1.5s ease; background-size: cover; background-position: center; }
         .wing_image1 { width: 33%; background-image: url(img/main/richelieu_wing.jpg); }
         .wing_image2 { width: 34%; background-image: url(img/main/denon_wing.jpeg); }
@@ -46,6 +49,40 @@
         section .famous5 { width: 20%; background-image: url(img/main/french_painting.jpg); }
         .famous1:hover, .famous2:hover, .famous3:hover, .famous4:hover, .famous5:hover { opacity: 0.7; }
         
+        #introduction_space { width: 100%; height: 300px; background-color: lightgray; text-align: center; }
+        #introduction_space .is_subtitle { font-size: 22px; }
+        #introduction_space .is_title { font-size: 45px; }
+
+        #exhibition_space1 { width: 100%; height: 373px; display: flex; }
+        #exhibition_space1 .museum_map { width: 50%; height: 373px; background-image: url(img/main/Louvre_map.jpg); background-size: cover;
+                                         background-position: center; }
+        #exhibition_space1 .mona_lisa { width: 25%; height: 373px; background-image: url(img/main/Mona_Lisa.jpg); background-size: cover;
+                                           background-position: top; }
+        #exhibition_space1 .explain_space1 { width: 25%; height: 373px; }
+
+        #exhibition_space2 { width: 100%; height: 375px; display: flex; }                           
+        #exhibition_space2 .sphinx { width: 25%; height: 375px; background-image: url(img/main/Sphinx.jpg); background-size: cover;
+                                     background-position: center; }
+        #exhibition_space2 .explain_space2 { width: 25%; height: 375px;  }
+        #exhibition_space2 .the_Venus { width: 25%; height: 375px; background-image: url(img/main/the_Venus.jpg); background-size: cover;
+                                        background-position: top; }
+        #exhibition_space2 .explain_space3 { width: 25%; height: 375px; }
+
+        #exhibition_space3 { width: 100%; height: 375px; display: flex; }
+        #exhibition_space3 .Horse_man { width: 25%; height: 375px; background-image: url(img/main/Horseman.jpg); background-size: cover;
+                                        background-position: center; }
+        #exhibition_space3 .explain_space4 { width: 25%; height: 375px; }
+        #exhibition_space3 .Delacroix { width: 25%; height: 375px; background-image: url(img/main/Delacroix.jpg); background-size: cover;
+                                        background-position: center; }
+        #exhibition_space3 .explain_space5 { width: 25%; height: 375px; }
+        .detail_button { width: 125px; height: 50px; }
+
+        #video_title { width: 100%; height: 100px; text-align: center; background-color: lightgray; }
+        #video_space { width: 100%; height: 800px; overflow: hidden; position: relative;}
+        #video_space video { width: 100%; height: auto; position: absolute; top: 50%; transform: translateY(-50%);}
+
+        #Tour_guide_introduction { width: 100%; height: 100px; text-align: center; }
+ 
 
         
     </style>
@@ -88,9 +125,15 @@
 
         <section>
             <div class="louvre_wings">
-                <div class="wing_image1"><a href="#">Richelieu wing</a></div>
-                <div class="wing_image2"><a href="#">Denon wing</a></div>
-                <div class="wing_image3"><a href="#">Sully_wing</a></div>
+                <div class="wing_image1">
+                    <span class="titles">Richelieu wing</span>
+                </div>
+                <div class="wing_image2">
+                    <span class="titles">Denon wing</span>
+                </div>
+                <div class="wing_image3">
+                    <span class="titles">Sully wing</span>
+                </div>
             </div>
             <p class="welcome">Welcome to Louvre Museum</p>
             <h1 class="section_subject">The Halls of Famous Treasures</h1>
@@ -103,6 +146,76 @@
                 <div class="famous5"></div>
             </div>
         </section>
+
+        <div id="introduction_space">
+            <p class="is_subtitle">Louvre's exhibit</p>
+            <h1 class="is_title">Treasures you can only find here</h1>
+        </div>
+
+        <div id="exhibition_space1">
+            <div class="museum_map">
+            </div>
+            <div class="mona_lisa">
+            </div>
+            <div class="explain_space1">
+                The Mona Lisa is a half-length portrait painting
+                 by Italian artist Leonardo da Vinci. Considered
+                  an archetypal masterpiece of the Italian Renaissance,
+                  it has been described as "the best known, the most visited,
+                   the most written about, the most sung about, the most parodied
+                    work of art in the world".<br>
+
+                    Artist: Leonardo da Vinci<br>
+                <button class="detail_button">Learn More Details</button>
+            </div>
+        </div>
+
+        <div id="exhibition_space2">
+            <div class="explain_space2">
+                The Great Sphinx of Tanis is a granite sculpture of a sphinx,
+                whose date may be as early as the 26th century BC.
+                It was discovered in the ruins of the Temple of Amun-Ra in Tanis,
+                Egypt's capital during the 21st Dynasty and the 23rd Dynasty.
+                <button class="detail_button">Learn More Details</button>
+            </div>
+            <div class="sphinx">
+            </div>
+            <div class="explain_space3">
+                Venus is
+                <button class="detail_button">Learn More Details</button>
+            </div>
+            <div class="the_Venus">
+            </div>
+        </div>
+
+        <div id="exhibition_space3">
+            <div class="Horse_man">
+            </div>
+            <div class="explain_space4">
+                Charging Chasseur is
+                <button class="detail_button">Learn More Details</button>
+            </div>
+            <div class="Delacroix">
+            </div>
+            <div class="explain_space5">
+                Liberty Leading the People is
+                <button class="detail_button">Learn More Details</button>
+            </div>
+        </div>
+
+        <div id="video_title">
+            <h1>Appreciating Video</h1>
+        </div>
+
+        <div id="video_space">
+            <video src="img/main/Le Louvre.mp4" loop muted autoplay></video>
+        </div>
+
+        <div id="Tour_guide_introduction">
+            <h3>Veteran Tour guides</h3>
+            <h1>With a guide that you can trust!</h1>
+        </div>
+
     </div>
 </body>
 </html>
