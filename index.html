@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Louvre Museum</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         ul, ol, li { list-style: none; margin: 0; padding: 0; }
@@ -18,8 +19,8 @@
         header #menu { width: 500px; display: flex; justify-content: space-between; float: right; }
 
         #slider { width: 100%; height: 1280px; margin: 0 auto; text-align: center;
-                  background-image: url(img/main/Louvre_slider1.jpg); background-size: cover; background-position: center; }
-        /* #slider .main_rotating_image { width: 100%; height: 1280px; } */
+                   }
+        #slider .main_rotating_image { width: 100%; height: 1280px; }
         #slider .blank_space { width: 200px; height: 150px; float: left;  }
         #slider #reservation_space { width: 1160px; height: 150px; position: absolute; top: 1000px; 
                                      left: 0; background: rgba(221, 160, 221, 0.5); color: #333; }
@@ -81,7 +82,19 @@
         #video_space { width: 100%; height: 800px; overflow: hidden; position: relative;}
         #video_space video { width: 100%; height: auto; position: absolute; top: 50%; transform: translateY(-50%);}
 
-        #Tour_guide_introduction { width: 100%; height: 100px; text-align: center; }
+        #Tour_guide_explain { width: 1500px; height: 1000px; margin: 0 auto; background-image: url(img/main/tourguide_background.jpg);
+                              background-position: center; background-size: cover; display: flex; flex-wrap: wrap; justify-content: center; }
+        #Tour_guide_explain > h3 { color: #fff; text-align: center; width: 100%; }
+        #Tour_guide_explain h1 { color: #fff; text-align: center; width: 100%; }
+        #Tour_guide_explain .tour_guide_box { width: 35%; height: 125px; background-color: #fff; margin-left: 25px; border-radius: 20px;
+                                              box-shadow: 5px 5px 5px rgba(25, 25, 25, 0.65); }
+        .tour_guide_box h3 { color: #333; display: inline-block; text-align: center; }
+        .tour_guide_box .tour_guides { vertical-align: top; }
+
+        #event_space { width: 100%; height: 500px; }
+        #event_space h3 { text-align: center; }
+        #event_space h1 { text-align: center; }
+
  
 
         
@@ -91,8 +104,24 @@
     <div id="wrap">
             <div id="slider">
                 <div class="main_rotating_image">
-                    
+                    <img src="img/main/Louvre_slider1.jpg" alt="메인 이미지">
                 </div>
+
+                <script>
+                    var Changing_image = document.getElementsByTagName('img')[0];
+                    var image_array = ["img/main/Louvre_slider1.jpg", "img/main/Louvre_slider2.jpg", "img/main/Louvre_slider3.jpg"];
+                    var index = 0;
+                    function Changing_img(){
+                        Changing_image.src = image_array[index];
+                        index++;
+                        if(index>=image_array.length){
+                            index = 0;
+                        }
+                    }
+                    setInterval(Changing_img, 4000);
+                </script>
+
+
                 <header>
                     <h1 class="main_subject"><a href="#">Louvre</a></h1>
                     <nav>
@@ -108,9 +137,27 @@
                 <div id="reservation_space">
                     <div class="blank_space"></div>
                     <div class="rv_menu">                        
-                        <div class="rv_box">Select date</div>
-                        <div class="rv_box">Sign up audio duide book</div>
-                        <div class="rv_box">Guide tour service</div>
+                        <div class="rv_box">
+                            <h2>Select date</h2>
+                            <input type="date" value="2022-05-01">
+                            <input type="submit" value="submit">
+                        </div>
+                        <div class="rv_box">
+                            <h2>Select Time</h2>
+                            <input type="time" value="09:00" min="09:00" max="18:00" step="1800">
+                            <input type="submit" value="submit">
+                        </div>
+                        <div class="rv_box">
+                            <h2>Sing up audio guide book</h2>
+                            <select name="Audio_book">
+                                <option value="english">English</option>
+                                <option value="spanish">Spanish</option>
+                                <option value="russian">Russian</option>
+                                <option value="chinese">Chinese</option>
+                                <option value="korean">Korean</option>
+                            </select>
+                            <input type="submit" value="submit">
+                        </div>
                         <div class="rv_payment">
                             <p>payment</p>
                             <button>Learn more</button>
@@ -211,9 +258,47 @@
             <video src="img/main/Le Louvre.mp4" loop muted autoplay></video>
         </div>
 
-        <div id="Tour_guide_introduction">
+        <div id="Tour_guide_explain">
             <h3>Veteran Tour guides</h3>
             <h1>With a guide that you can trust!</h1>
+            <div class="tour_guide_box">
+                <img src="img/main/tourguide_english.png" class="tour_guides" alt="투어 가이드">
+                <h3>Brian Grant</h3>
+            </div>
+            <div class="tour_guide_box">
+                <img src="img/main/tourguide_germanese.png" class="tour_guides" alt="투어 가이드">
+                <h3>Amelie Meier</h3>
+            </div>
+            <div class="tour_guide_box">
+                <img src="img/main/tourguide_spanish.png" class="tour_guides" alt="투어 가이드">
+                <h3>Hernando Diego</h3>
+            </div>
+            <div class="tour_guide_box">
+                <img src="img/main/tourguide_arab.png" class="tour_guides" alt="투어 가이드">
+                <h3>Fatima Laila</h3>
+            </div>
+            <div class="tour_guide_box">
+                <img src="img/main/tourguide_korean.png" class="tour_guides" alt="투어 가이드">
+                <h3>yeongho cha</h3>
+            </div>
+            <div class="tour_guide_box">
+                <img src="img/main/tourguide_indian.png" class="tour_guides" alt="투어 가이드">
+                <h3>Vishal Rajput</h3>
+            </div>
+            <div class="tour_guide_box">
+                <img src="img/main/tourguide_chinese.png" class="tour_guides" alt="투어 가이드">
+                <h3>Zhāng mǐn</h3>
+            </div>
+            <div class="tour_guide_box">
+                <img src="img/main/tourguide_japanese.png" class="tour_guides" alt="투어 가이드">
+                <h3>Tomoyuki Tadayoshi</h3>
+            </div>
+        </div>
+
+        <div id="event_space">
+            <h3>event of the month</h3>
+            <h1>You will have exciting experiences and discoveries!</h1>
+            <div></div>
         </div>
 
     </div>
