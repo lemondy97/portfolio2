@@ -42,15 +42,15 @@
         section .welcome { font-size: 22px; }
         section .section_subject { font-size: 45px; }
         section .famous_room { width: 1500px; height: 300px; display: flex; justify-content: center; margin-left: 230px; }
-        .famous1, .famous2, .famous3, .famous4, .famous5 { background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; }
-        section .famous1 { width: 20%;  background-image: url(img/main/Napoleon_III_salon.jpg); }
-        section .famous2 { width: 20%; background-image: url(img/main/Louis_XIV_room.jpg); }
-        section .famous3 { width: 20%; background-image: url(img/main/epyption_hall.jpg); }
-        section .famous4 { width: 20%; background-image: url(img/main/renaissance_painting.jpg); }
-        section .famous5 { width: 20%; background-image: url(img/main/french_painting.jpg); }
+        .famous1, .famous2, .famous3, .famous4, .famous5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; }
+        section .famous1 { background-image: url(img/main/Napoleon_III_salon.jpg); }
+        section .famous2 { background-image: url(img/main/Louis_XIV_room.jpg); }
+        section .famous3 { background-image: url(img/main/epyption_hall.jpg); }
+        section .famous4 { background-image: url(img/main/renaissance_painting.jpg); }
+        section .famous5 { background-image: url(img/main/french_painting.jpg); }
         .famous1:hover, .famous2:hover, .famous3:hover, .famous4:hover, .famous5:hover { opacity: 0.7; }
         
-        #introduction_space { width: 100%; height: 300px; background-color: lightgray; text-align: center; }
+        #introduction_space { width: 100%; height: 200px; background-color: lightgray; text-align: center; }
         #introduction_space .is_subtitle { font-size: 22px; }
         #introduction_space .is_title { font-size: 45px; }
 
@@ -78,25 +78,64 @@
         #exhibition_space3 .explain_space5 { width: 25%; height: 375px; }
         .detail_button { width: 125px; height: 50px; }
 
+        #event_space { width: 100%; height: 668px; position: relative; background-color: rgba(5, 5, 5, 0.85); }
+        #event_space h3 { text-align: center; color: #fff; }
+        #event_space h1 { text-align: center; color: #fff; }
+
+        #rotating_banner_wrap { width: 850px; height: 600px; margin: auto; position: relative; overflow: hidden; 
+                                             cursor: pointer; transition: all 1.5s ease; background: rgba(25, 25, 25, 0.8); }
+        .slide { width: 2250px; height: 100%; }
+        .slide li { width: 400px; height: 600px; float: left; }
+        .siide li img { width: 400px; }
+        .left { position: absolute; top: 50%; left: 25%; display: block; font-size: 25px; color:#fff; line-height: 45px;
+                             cursor: pointer;  height: 50px; transform: translate(-50%); background: rgb(80, 194, 255); border-radius: 35px; }
+        .right { position: absolute; top: 50%; right: 24%; display: block; font-size: 25px; color:#fff; line-height: 45px;
+                             cursor: pointer;  height: 50px; transform: translate(-50%); background: rgb(80, 194, 255); border-radius: 35px; }
+        .left:hover { background: rgba(80, 194, 255, 0.75); color: #444; }
+        .right:hover { background: rgba(80, 194, 255, 0.75); color: #444; }
+
+        #rotating_banner_wrap .banner_wrap { width: 100%; height: 100%; transition: all 1.5s ease; }
+        #rotating_banner_wrap .banners { transition: all 1.5s ease; }
+        #rotating_banner_wrap .banner_wrap > img:hover { opacity: 0.75; }
+
+        #event_space .rotating_banner { margin-right: 50px; }
+
         #video_title { width: 100%; height: 100px; text-align: center; background-color: lightgray; }
         #video_space { width: 100%; height: 800px; overflow: hidden; position: relative;}
         #video_space video { width: 100%; height: auto; position: absolute; top: 50%; transform: translateY(-50%);}
 
-        #Tour_guide_explain { width: 1500px; height: 1000px; margin: 0 auto; background-image: url(img/main/tourguide_background.jpg);
-                              background-position: center; background-size: cover; display: flex; flex-wrap: wrap; justify-content: center; }
-        #Tour_guide_explain > h3 { color: #fff; text-align: center; width: 100%; }
-        #Tour_guide_explain h1 { color: #fff; text-align: center; width: 100%; }
+        #Tour_guide_explain { width: 1500px; height: 800px; margin: 0 auto; background-image: url(img/main/tourguide_background.jpg);
+                              background-position: center; background-size: cover; }
+        #Tour_guide_explain > h3 { color: #fff; text-align: center; }
+        #Tour_guide_explain > h1 { color: #fff; text-align: center; }
+        #Tour_guide_explain .guide_explain_box { width: 100%; height: 600px; display: flex; flex-wrap: wrap; justify-content: center; }
         #Tour_guide_explain .tour_guide_box { width: 35%; height: 125px; background-color: #fff; margin-left: 25px; border-radius: 20px;
                                               box-shadow: 5px 5px 5px rgba(25, 25, 25, 0.65); }
         .tour_guide_box h3 { color: #333; display: inline-block; text-align: center; }
         .tour_guide_box .tour_guides { vertical-align: top; }
 
-        #event_space { width: 100%; height: 500px; }
-        #event_space h3 { text-align: center; }
-        #event_space h1 { text-align: center; }
+        #souvenir_space { width: 1500px; height: 600px; margin: 0 auto; display: flex; justify-content: center; flex-wrap: wrap; background-color: rgb(225, 225, 225); }
+        #souvenir_space h3 { width: 100%; text-align: center; }
+        #souvenir_space h1 { width: 100%; text-align: center; }
 
- 
+        #souvenir_space .souvenirs { transition: all 1.5s ease; margin-left: 25px; }
+        #souvenir_space .souvenirs:hover { opacity: 0.75; }
+        #souvenir_space .souvenir_box { text-align: center; }
+        #souvenir_space .guide_information { display: inline-block; }
 
+        #sns_space { width: 100%; height: 600px; }
+        #sns_space h3 { text-align: center; }
+        #sns_space h1 { text-align: center; }
+
+        .sns_image1, .sns_image2, .sns_image3, .sns_image4, .sns_image5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; }
+        .sns_image1:hover, .sns_image2:hover, .sns_image3:hover, .sns_image4:hover, .sns_image5:hover { opacity: 0.75; }
+
+        #sns_space .sns_image_container { width: 100%; height: 450px; display: flex; justify-content: center; flex-wrap: wrap; }
+        #sns_space .sns_image1 { background-image: url(img/main/sns_image1.jpg); }
+        #sns_space .sns_image2 { background-image: url(img/main/sns_image2.jpg); }
+        #sns_space .sns_image3 { background-image: url(img/main/sns_image3.jpg); }
+        #sns_space .sns_image4 { background-image: url(img/main/sns_image4.jpg); }
+        #sns_space .sns_image5 { background-image: url(img/main/sns_image5.jpg); }
         
     </style>
 </head>
@@ -250,6 +289,73 @@
             </div>
         </div>
 
+        <div id="event_space">
+            <h3>event of the month</h3>
+            <h1>You will have exciting experiences and discoveries!</h1>
+
+            <span class="left">&lt;</span>
+            <span class="right">&gt;</span>
+
+            <div id="rotating_banner_wrap">
+                <ul class="slide">
+                    <li class="rotating_banner">
+                       <div class="banner_wrap">
+                           <img src="img/main/museum_banner1.jpg" class="banners" alt="박물관 배너">
+                       </div> 
+                    </li>
+                    <li class="rotating_banner">
+                        <div class="banner_wrap">
+                            <img src="img/main/museum_banner2.jpg" class="banners" alt="박물관 배너">
+                        </div> 
+                     </li>
+                     <li class="rotating_banner">
+                        <div class="banner_wrap">
+                            <img src="img/main/museum_banner3.jpg" class="banners" alt="박물관 배너">
+                        </div> 
+                     </li>
+                     <li class="rotating_banner">
+                        <div class="banner_wrap">
+                            <img src="img/main/museum_banner4.jpg" class="banners" alt="박물관 배너">
+                        </div> 
+                     </li>
+                     <li class="rotating_banner">
+                        <div class="banner_wrap">
+                            <img src="img/main/museum_banner5.jpg" class="banners" alt="박물관 배너">
+                        </div> 
+                     </li>
+                     <li class="rotating_banner">
+                        <div class="banner_wrap">
+                            <img src="img/main/museum_banner6.jpg" class="banners" alt="박물관 배너">
+                        </div> 
+                     </li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+
+        $(document).ready(function(){
+            $('.left').click(function(){
+                $('.slide').stop().animate({marginRight: -450}, 450, function(){
+                    $('.slide li:first').appendTo('.slide');
+                    $('.slide').css({marginRight: 0});
+                    $('.slide').css({marginRight: 0});
+                });
+            });
+        });
+
+        $(document).ready(function(){
+            $('.right').click(function(){
+                $('.slide').stop().animate({marginLeft: -450}, 450, function(){
+                    $('.slide li:first').appendTo('.slide');
+                    $('.slide').css({marginLeft: 0});
+                    $('.slide').css({marginLeft: 0});
+                });
+            });
+        });
+
+        </script>
+
         <div id="video_title">
             <h1>Appreciating Video</h1>
         </div>
@@ -261,45 +367,126 @@
         <div id="Tour_guide_explain">
             <h3>Veteran Tour guides</h3>
             <h1>With a guide that you can trust!</h1>
-            <div class="tour_guide_box">
-                <img src="img/main/tourguide_english.png" class="tour_guides" alt="투어 가이드">
-                <h3>Brian Grant</h3>
-            </div>
-            <div class="tour_guide_box">
-                <img src="img/main/tourguide_germanese.png" class="tour_guides" alt="투어 가이드">
-                <h3>Amelie Meier</h3>
-            </div>
-            <div class="tour_guide_box">
-                <img src="img/main/tourguide_spanish.png" class="tour_guides" alt="투어 가이드">
-                <h3>Hernando Diego</h3>
-            </div>
-            <div class="tour_guide_box">
-                <img src="img/main/tourguide_arab.png" class="tour_guides" alt="투어 가이드">
-                <h3>Fatima Laila</h3>
-            </div>
-            <div class="tour_guide_box">
-                <img src="img/main/tourguide_korean.png" class="tour_guides" alt="투어 가이드">
-                <h3>yeongho cha</h3>
-            </div>
-            <div class="tour_guide_box">
-                <img src="img/main/tourguide_indian.png" class="tour_guides" alt="투어 가이드">
-                <h3>Vishal Rajput</h3>
-            </div>
-            <div class="tour_guide_box">
-                <img src="img/main/tourguide_chinese.png" class="tour_guides" alt="투어 가이드">
-                <h3>Zhāng mǐn</h3>
-            </div>
-            <div class="tour_guide_box">
-                <img src="img/main/tourguide_japanese.png" class="tour_guides" alt="투어 가이드">
-                <h3>Tomoyuki Tadayoshi</h3>
+            <div class="guide_explain_box">
+                <div class="tour_guide_box">
+                    <img src="img/main/tourguide_english.png" class="tour_guides" alt="투어 가이드">
+                    <h3>Brian Grant</h3>
+                    <ul class="guide_information">
+                        <li><b>From: </b>USA</li>
+                        <li><b>Education: </b>Columbia University</li>
+                        <li><b>Experience: </b>Ambassade des Etats Unis d'Amerique's Diplomat, Feb 2001~ Dec 2006</li>
+
+                    </ul>
+                </div>
+                <div class="tour_guide_box">
+                    <img src="img/main/tourguide_germanese.png" class="tour_guides" alt="투어 가이드">
+                    <h3>Amelie Meier</h3>
+                    <ul class="guide_information">
+                        <li><b>From: </b>Austria</li>
+                        <li><b>Education: </b>University for Music and Performing Arts Vienna</li>
+                        <li><b>Experience: </b>cellist, May 2003~ Oct 2010</li>
+
+                    </ul>
+                </div>
+                <div class="tour_guide_box">
+                    <img src="img/main/tourguide_spanish.png" class="tour_guides" alt="투어 가이드">
+                    <h3>Hernando Diego</h3>
+                    <ul class="guide_information">
+                        <li><b>From: </b>Peru</li>
+                        <li><b>Education: </b>University of Barcelona</li>
+                        <li><b>Experience: </b>Professor of Spanish Literature , May 2005~ Oct 2011</li>
+
+                    </ul>
+                </div>
+                <div class="tour_guide_box">
+                    <img src="img/main/tourguide_arab.png" class="tour_guides" alt="투어 가이드">
+                    <h3>fatimat laylaa</h3>
+                    <ul class="guide_information">
+                        <li><b>From: </b>Tunisia</li>
+                        <li><b>Education: </b>University of Sorbonne</li>
+                        <li><b>Experience: </b>archaeologist, Apr 2009~ Jul 2015</li>
+                    
+                    </ul>
+                </div>
+                <div class="tour_guide_box">
+                    <img src="img/main/tourguide_korean.png" class="tour_guides" alt="투어 가이드">
+                    <h3>yeongho cha</h3>
+                    <ul class="guide_information">
+                        <li><b>From: </b>South Korea</li>
+                        <li><b>Education: </b>University of Bordeaux</li>
+                        <li><b>Experience: </b>executive chef, Nov 2013~ Jan 2016</li>
+                    
+                    </ul>
+                </div>
+                <div class="tour_guide_box">
+                    <img src="img/main/tourguide_indian.png" class="tour_guides" alt="투어 가이드">
+                    <h3>vishaal raajapoot</h3>
+                    <ul class="guide_information">
+                        <li><b>From: </b>India</li>
+                        <li><b>Education: </b>University of Florence</li>
+                        <li><b>Experience: </b>historiographer, May 2002~ Oct 2014</li>
+
+                    </ul>
+                </div>
+                <div class="tour_guide_box">
+                    <img src="img/main/tourguide_chinese.png" class="tour_guides" alt="투어 가이드">
+                    <h3>Zhāng mǐn</h3>
+                    <ul class="guide_information">
+                        <li><b>From: </b>People's Republic of China</li>
+                        <li><b>Education: </b>University of Peking</li>
+                        <li><b>Experience: </b>Lawyer, Seb 2007~ Feb 2013</li>
+
+                    </ul>
+                </div>
+                <div class="tour_guide_box">
+                    <img src="img/main/tourguide_japanese.png" class="tour_guides" alt="투어 가이드">
+                    <h3>Tomoyuki Tadayoshi</h3>
+                    <ul class="guide_information">
+                        <li><b>From: </b>Japan</li>
+                        <li><b>Education: </b>University of Durham</li>
+                        <li><b>Experience: </b>Professor of religion, Mar 2002~ Dec 2011</li>
+                    
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div id="event_space">
-            <h3>event of the month</h3>
-            <h1>You will have exciting experiences and discoveries!</h1>
-            <div></div>
+        <div id="souvenir_space">
+            <h3>Buy Souvenir</h3>
+            <h1>Carry on a beautiful legacy with antique souvenirs</h1>
+            <div class="souvenir_box">
+                <a href="#"><img src="img/main/museum_souvenir1.jpg" class="souvenirs" alt="황금 피라미드"></a>
+                <h2>The Golden Pyramid</h2>
+            </div>
+            <div class="souvenir_box">
+                <a href="#"><img src="img/main/museum_souvenir2.jpg" class="souvenirs" alt="왕실 문양의 잔"></a>
+                <h2>14th Century Royal Goblet</h2>
+            </div>
+            <div class="souvenir_box">
+                <a href="#"><img src="img/main/museum_souvenir3.jpg" class="souvenirs" alt="파리 기념물 자석"></a>
+                <h2>Paris's Heritage Fridge Magnet</h2>
+            </div>
         </div>
+
+        <div id="sns_space">
+            <h3>Instagram
+                <img src="img/main/instagram_icon.jpg" alt="인스타드램 아이콘">
+            </h3>
+            <h1> Please engrave the memories you want to keep</h1>
+            <div class="sns_image_container">
+                <div class="sns_image1">
+                </div>
+                <div class="sns_image2">
+                </div>
+                <div class="sns_image3">
+                </div>
+                <div class="sns_image4">
+                </div>
+                <div class="sns_image5">
+                </div>
+            <div>
+        </div>
+
 
     </div>
 </body>
