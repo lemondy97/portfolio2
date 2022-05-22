@@ -29,8 +29,8 @@
         #slider .rv_payment { width: 225px; height: 150px; background-color: #222; margin-left: 25px; color: #fff; }
         .rv_payment button { width: 100px; height: 50px; }
 
-        section { width: 100%; height: 850px; margin: 0 auto; text-align: center; }
-        section .louvre_wings { width: 1500px; height: 333px; text-align: center; display: flex; margin-left: 230px; 
+        section { width: 1500px; height: 850px; margin: 0 auto; text-align: center; }
+        section .louvre_wings { width: 1500px; height: 333px; text-align: center; display: flex;
                                 justify-content: space-between; font-weight: bold; color: #fff;
                                 font-size: 20px; position: relative; }
         .louvre_wings .titles { position: absolute; bottom: 10px; }
@@ -41,7 +41,7 @@
         .wing_image1:hover, .wing_image2:hover, .wing_image3:hover { opacity: 0.7; }
         section .welcome { font-size: 22px; }
         section .section_subject { font-size: 45px; }
-        section .famous_room { width: 1500px; height: 300px; display: flex; justify-content: center; margin-left: 230px; }
+        section .famous_room { width: 1500px; height: 300px; display: flex; justify-content: center; }
         .famous1, .famous2, .famous3, .famous4, .famous5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; }
         section .famous1 { background-image: url(img/main/Napoleon_III_salon.jpg); }
         section .famous2 { background-image: url(img/main/Louis_XIV_room.jpg); }
@@ -77,6 +77,21 @@
                                         background-position: center; }
         #exhibition_space3 .explain_space5 { width: 25%; height: 375px; }
         .detail_button { width: 125px; height: 50px; }
+
+        .mona_lisa, .explain_space1 { transition: all 0.75s ease ; }
+        .mona_lisa:hover, .explain_space1:hover { cursor: pointer; background-color: rgb(255,220,60); }
+
+        .sphinx, .explain_space2 { transition: all 0.75s ease ; }
+        .sphinx:hover, .explain_space2:hover { cursor: pointer; background-color: rgb(255,220,60); }
+
+        .the_Venus, .explain_space3 { transition: all 0.75s ease ; }
+        .the_Venus:hover, .explain_space3:hover { cursor: pointer; background-color: rgb(255,220,60); }
+
+        .Horse_man, .explain_space4 { transition: all 0.75s ease ; }
+        .Horse_man:hover, .explain_space4:hover { cursor: pointer; background-color: rgb(255,220,60); }
+
+        .Delacroix, .explain_space5 { transition: all 0.75s ease ; }
+        .Delacroix:hover, .explain_space5:hover { cursor: pointer; background-color: rgb(255,220,60); }
 
         #event_space { width: 100%; height: 668px; position: relative; background-color: rgba(5, 5, 5, 0.85); }
         #event_space h3 { text-align: center; color: #fff; }
@@ -123,19 +138,30 @@
         #souvenir_space .souvenir_box { text-align: center; }
         #souvenir_space .guide_information { display: inline-block; }
 
-        #sns_space { width: 100%; height: 600px; }
+        #sns_space { width: 100%; height: 600px; position: relative; }
         #sns_space h3 { text-align: center; }
         #sns_space h1 { text-align: center; }
 
-        .sns_image1, .sns_image2, .sns_image3, .sns_image4, .sns_image5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; }
+        .sns_image1, .sns_image2, .sns_image3, .sns_image4, .sns_image5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1s ease; }
         .sns_image1:hover, .sns_image2:hover, .sns_image3:hover, .sns_image4:hover, .sns_image5:hover { opacity: 0.75; }
 
-        #sns_space .sns_image_container { width: 100%; height: 450px; display: flex; justify-content: center; flex-wrap: wrap; }
+        #sns_space .sns_image_container { width: 100%; height: 450px; display: flex; justify-content: center; flex-wrap: wrap; position: relative; }
         #sns_space .sns_image1 { background-image: url(img/main/sns_image1.jpg); }
         #sns_space .sns_image2 { background-image: url(img/main/sns_image2.jpg); }
         #sns_space .sns_image3 { background-image: url(img/main/sns_image3.jpg); }
         #sns_space .sns_image4 { background-image: url(img/main/sns_image4.jpg); }
         #sns_space .sns_image5 { background-image: url(img/main/sns_image5.jpg); }
+
+        .sns_date1, .sns_date2, .sns_date3, .sns_date4, .sns_date5 { width: 100%; opacity: 0; transition: all 1s ease; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 25px; }
+        #sns_space .sns_image1:hover > .sns_date1:hover { opacity: 1; }
+        #sns_space .sns_image2:hover > .sns_date2:hover { opacity: 1; }
+        #sns_space .sns_image3:hover > .sns_date3:hover { opacity: 1; }
+        #sns_space .sns_image4:hover > .sns_date4:hover { opacity: 1; }
+        #sns_space .sns_image5:hover > .sns_date5:hover { opacity: 1; }
+        
+
+
+        
         
     </style>
 </head>
@@ -244,7 +270,7 @@
             <div class="mona_lisa">
             </div>
             <div class="explain_space1">
-                The Mona Lisa is a half-length portrait painting
+                <b>The Mona Lisa</b> is a half-length portrait painting
                  by Italian artist Leonardo da Vinci. Considered
                   an archetypal masterpiece of the Italian Renaissance,
                   it has been described as "the best known, the most visited,
@@ -258,7 +284,7 @@
 
         <div id="exhibition_space2">
             <div class="explain_space2">
-                The Great Sphinx of Tanis is a granite sculpture of a sphinx,
+                <b>The Great Sphinx</b> of Tanis is a granite sculpture of a sphinx,
                 whose date may be as early as the 26th century BC.
                 It was discovered in the ruins of the Temple of Amun-Ra in Tanis,
                 Egypt's capital during the 21st Dynasty and the 23rd Dynasty.
@@ -267,7 +293,10 @@
             <div class="sphinx">
             </div>
             <div class="explain_space3">
-                Venus is
+                <b>The Venus de Milo</b> is an ancient Greek sculpture that was created during the Hellenistic period,
+                sometime between 150 and 125 BC. It is one of the most famous works of ancient Greek sculpture,
+                having been prominently displayed at the Louvre Museum since shortly after the statue was rediscovered
+                on the island of Milos, Greece, in 1820.
                 <button class="detail_button">Learn More Details</button>
             </div>
             <div class="the_Venus">
@@ -278,13 +307,22 @@
             <div class="Horse_man">
             </div>
             <div class="explain_space4">
-                Charging Chasseur is
+                <b>The Charging Chasseur</b> is an oil painting on canvas of about 1812
+                by the French painter Théodore Géricault, portraying a mounted
+                Napoleonic cavalry officer who is ready to attack.
+                The painting was Géricault's first exhibited work and it is
+                an example of Géricault's attempt to condense both movement and structure in its art.
                 <button class="detail_button">Learn More Details</button>
             </div>
             <div class="Delacroix">
             </div>
             <div class="explain_space5">
-                Liberty Leading the People is
+                <b>Liberty Leading the People</b> is a painting by Eugène Delacroix
+                commemorating the July Revolution of 1830,
+                which toppled King Charles X of France. A woman of the people
+                with a Phrygian cap personifying the concept of Liberty leads
+                a varied group of people forward over a barricade and
+                the bodies of the fallen.
                 <button class="detail_button">Learn More Details</button>
             </div>
         </div>
@@ -334,26 +372,36 @@
 
         <script>
 
-        $(document).ready(function(){
+            function Left(){
+                $('.slide').stop().animate({marginRight: -450}, function(){
+                    $('.slide li:last').prependTo('.slide');
+                        $('.slide').css({marginRight: 0});
+                });
+            }
+
+            function Right(){
+                $('.slide').stop().animate({marginLeft: -450}, function(){
+                    $('.slide li:first').appendTo('.slide');
+                        $('.slide').css({marginLeft: 0});
+                });            
+            }
+
+            function Rotating(){
+                $('.slide').stop().animate({marginLeft: -450}, function(){
+                    $('.slide li:first').appendTo('.slide');
+                        $('.slide').css({marginLeft:0});
+                });
+            }
+
+            setInterval(Rotating, 5000);
+
             $('.left').click(function(){
-                $('.slide').stop().animate({marginRight: -450}, 450, function(){
-                    $('.slide li:first').appendTo('.slide');
-                    $('.slide').css({marginRight: 0});
-                    $('.slide').css({marginRight: 0});
-                });
+                Left();
             });
-        });
 
-        $(document).ready(function(){
             $('.right').click(function(){
-                $('.slide').stop().animate({marginLeft: -450}, 450, function(){
-                    $('.slide li:first').appendTo('.slide');
-                    $('.slide').css({marginLeft: 0});
-                    $('.slide').css({marginLeft: 0});
-                });
+                Right();
             });
-        });
-
         </script>
 
         <div id="video_title">
@@ -361,7 +409,7 @@
         </div>
 
         <div id="video_space">
-            <video src="img/main/Le Louvre.mp4" loop muted autoplay></video>
+            <!-- <video src="img/main/Le Louvre.mp4" loop muted autoplay></video> -->
         </div>
 
         <div id="Tour_guide_explain">
@@ -470,22 +518,39 @@
 
         <div id="sns_space">
             <h3>Instagram
-                <img src="img/main/instagram_icon.jpg" alt="인스타드램 아이콘">
+                <img src="img/main/instagram_icon1.jpg" alt="인스타드램 아이콘">
             </h3>
             <h1> Please engrave the memories you want to keep</h1>
             <div class="sns_image_container">
                 <div class="sns_image1">
+                    <div class="sns_date1">
+                        <img src="img/main/instagram_icon2.png" alt="인스타그램 아이콘"><b>2022.05.22</b>
+                    </div>
                 </div>
                 <div class="sns_image2">
+                    <div class="sns_date2">
+                        <img src="img/main/instagram_icon2.png" alt="인스타그램 아이콘"><b>2022.05.16</b>
+                    </div>
                 </div>
                 <div class="sns_image3">
+                    <div class="sns_date3">
+                        <img src="img/main/instagram_icon2.png" alt="인스타그램 아이콘"><b>2022.04.27</b>
+                    </div>
                 </div>
                 <div class="sns_image4">
+                    <div class="sns_date4">
+                        <img src="img/main/instagram_icon2.png" alt="인스타그램 아이콘"><b>2022.04.12</b>
+                    </div>
                 </div>
                 <div class="sns_image5">
+                    <div class="sns_date5">
+                        <img src="img/main/instagram_icon2.png" alt="인스타그램 아이콘"><b>2022.03.30</b>
+                    </div>
                 </div>
             <div>
         </div>
+
+        
 
 
     </div>
