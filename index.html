@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louvre Museum</title>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
+
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         ul, ol, li { list-style: none; margin: 0; padding: 0; }
@@ -15,18 +24,36 @@
 
         #wrap { width: 1920px; height: auto; margin: 0 auto;  }
         header { width: 100%; height: 200px; margin: 0 auto; color: #fff; position: absolute; z-index: 6; top: 0; left: 0; right: 0; }
-        header .main_subject { width: 300px; height: 100px; font-size: 80px; float: left; }
-        header #menu { width: 500px; display: flex; justify-content: space-between; float: right; }
+        header .main_subject { width: 300px; height: 100px; font-size: 80px; float: left; font-family: 'Cormorant Unicase', serif; }
+        header #menu { width: 500px; display: flex; justify-content: space-between; float: right; font-family: 'Fraunces', serif; }
 
-        #slider { width: 100%; height: 1280px; margin: 0 auto; text-align: center;
-                   }
-        #slider .main_rotating_image { width: 100%; height: 1280px; }
+        #slider { width: 100%; height: 1280px; margin: 0 auto; text-align: center; }
+        #slider .main_rotating_image { width: 100%; height: 1280px; animation: fadein 4s infinite; -moz-animation: fadein 4s infinite; 
+                                       -webkit-animation: fadein 4s infinite; -o-animation: fadein 4s infinite; }
+
+        @keyframes fadein { 
+            from { opacity: 0; } to { opacity: 1; }
+         }
+
+         @-moz-keyframes fadein { 
+            from { opacity: 0; } to { opacity: 1; }
+         }
+
+         @-webkit-keyframes fadein { 
+            from { opacity: 0; } to { opacity: 1; }
+         }
+
+         @-o-keyframes fadein { 
+            from { opacity: 0; } to { opacity: 1; }
+         }
+
+
         #slider .blank_space { width: 200px; height: 150px; float: left;  }
         #slider #reservation_space { width: 1160px; height: 150px; position: absolute; top: 1000px; 
                                      left: 0; background: rgba(221, 160, 221, 0.5); color: #333; }
-        #slider .rv_menu { width: 960px; height: 150px; display: flex; justify-content: center; align-items: center; }
-        #slider .rv_box { width: 225px; height: 100px; margin-left: 25px; background-color: honeydew; }
-        #slider .rv_payment { width: 225px; height: 150px; background-color: #222; margin-left: 25px; color: #fff; }
+        #slider .rv_menu { width: 960px; height: 150px; display: flex; justify-content: center; align-items: center; font-family: 'Fraunces', serif; }
+        #slider .rv_box { width: 225px; height: 100px; margin-left: 25px; background-color: honeydew; font-family: 'Fraunces', serif; }
+        #slider .rv_payment { width: 225px; height: 150px; background-color: #222; margin-left: 25px; color: #fff; font-family: 'Fraunces', serif; }
         .rv_payment button { width: 100px; height: 50px; }
 
         section { width: 1500px; height: 850px; margin: 0 auto; text-align: center; }
@@ -39,8 +66,8 @@
         .wing_image2 { width: 34%; background-image: url(img/main/denon_wing.jpeg); }
         .wing_image3 { width: 33%; background-image: url(img/main/sully_wing.jpg); }
         .wing_image1:hover, .wing_image2:hover, .wing_image3:hover { opacity: 0.7; }
-        section .welcome { font-size: 22px; }
-        section .section_subject { font-size: 45px; }
+        section .welcome { font-size: 22px; font-family: 'Cormorant Unicase', serif; margin-top: 25px; }
+        section .section_subject { font-size: 45px; font-family: 'Cormorant Unicase', serif; padding-bottom: 35px; }
         section .famous_room { width: 1500px; height: 300px; display: flex; justify-content: center; }
         .famous1, .famous2, .famous3, .famous4, .famous5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; }
         section .famous1 { background-image: url(img/main/Napoleon_III_salon.jpg); }
@@ -50,56 +77,59 @@
         section .famous5 { background-image: url(img/main/french_painting.jpg); }
         .famous1:hover, .famous2:hover, .famous3:hover, .famous4:hover, .famous5:hover { opacity: 0.7; }
         
-        #introduction_space { width: 100%; height: 200px; background-color: lightgray; text-align: center; }
-        #introduction_space .is_subtitle { font-size: 22px; }
-        #introduction_space .is_title { font-size: 45px; }
+        #introduction_space { width: 100%; height: 160px; background-color: lightgray; text-align: center; }
+        #introduction_space .is_subtitle { font-size: 22px; padding-top: 25px; font-family: 'Cormorant Unicase', serif;  }
+        #introduction_space .is_title { font-size: 45px; font-family: 'Cormorant Unicase', serif; }
 
-        #exhibition_space1 { width: 100%; height: 373px; display: flex; }
+        #exhibition_space1 { width: 100%; height: 373px; display: flex; font-family: 'Fraunces', serif; }
         #exhibition_space1 .museum_map { width: 50%; height: 373px; background-image: url(img/main/Louvre_map.jpg); background-size: cover;
                                          background-position: center; }
         #exhibition_space1 .mona_lisa { width: 25%; height: 373px; background-image: url(img/main/Mona_Lisa.jpg); background-size: cover;
-                                           background-position: top; }
-        #exhibition_space1 .explain_space1 { width: 25%; height: 373px; }
+                                           background-position: top; cursor: pointer; }
+        #exhibition_space1 .explain_space1 { width: 25%; height: 373px; font-size: 20px; text-align: center; padding-top: 50px; }
 
-        #exhibition_space2 { width: 100%; height: 375px; display: flex; }                           
+        #exhibition_space2 { width: 100%; height: 375px; display: flex; font-family: 'Fraunces', serif; }                           
         #exhibition_space2 .sphinx { width: 25%; height: 375px; background-image: url(img/main/Sphinx.jpg); background-size: cover;
-                                     background-position: center; }
-        #exhibition_space2 .explain_space2 { width: 25%; height: 375px;  }
+                                     background-position: center; cursor: pointer; order: 1;}
+        #exhibition_space2 .explain_space2 { width: 25%; height: 375px; order: 0; font-size: 20px; text-align: center; padding-top: 50px; }
         #exhibition_space2 .the_Venus { width: 25%; height: 375px; background-image: url(img/main/the_Venus.jpg); background-size: cover;
-                                        background-position: top; }
-        #exhibition_space2 .explain_space3 { width: 25%; height: 375px; }
+                                        background-position: top; cursor: pointer; order: 3;}
 
-        #exhibition_space3 { width: 100%; height: 375px; display: flex; }
+        #exhibition_space2 .explain_space3 { width: 25%; height: 375px; order: 2; font-size: 20px; text-align: center; padding-top: 50px; }
+
+        #exhibition_space3 { width: 100%; height: 375px; display: flex; font-family: 'Fraunces', serif; }
         #exhibition_space3 .Horse_man { width: 25%; height: 375px; background-image: url(img/main/Horseman.jpg); background-size: cover;
-                                        background-position: center; }
-        #exhibition_space3 .explain_space4 { width: 25%; height: 375px; }
+                                        background-position: center; cursor: pointer; }
+        #exhibition_space3 .explain_space4 { width: 25%; height: 375px; font-size: 20px; text-align: center; padding-top: 50px; }
         #exhibition_space3 .Delacroix { width: 25%; height: 375px; background-image: url(img/main/Delacroix.jpg); background-size: cover;
-                                        background-position: center; }
-        #exhibition_space3 .explain_space5 { width: 25%; height: 375px; }
-        .detail_button { width: 125px; height: 50px; }
+                                        background-position: center; cursor: pointer; }
+        #exhibition_space3 .explain_space5 { width: 25%; height: 375px; font-size: 20px; text-align: center; padding-top: 50px; }
+        .detail_button { width: 125px; height: 50px; cursor: pointer; }
 
         .mona_lisa, .explain_space1 { transition: all 0.75s ease ; }
-        .mona_lisa:hover, .explain_space1:hover { cursor: pointer; background-color: rgb(255,220,60); }
+        .mona_lisa:hover + .explain_space1 { cursor: pointer; background-color: rgb(255,220,60); }
 
         .sphinx, .explain_space2 { transition: all 0.75s ease ; }
-        .sphinx:hover, .explain_space2:hover { cursor: pointer; background-color: rgb(255,220,60); }
+        .sphinx:hover + .explain_space2 { cursor: pointer; background-color: rgb(255,220,60); }
 
         .the_Venus, .explain_space3 { transition: all 0.75s ease ; }
-        .the_Venus:hover, .explain_space3:hover { cursor: pointer; background-color: rgb(255,220,60); }
+        .the_Venus:hover + .explain_space3  { cursor: pointer; background-color: rgb(255,220,60); }
 
         .Horse_man, .explain_space4 { transition: all 0.75s ease ; }
-        .Horse_man:hover, .explain_space4:hover { cursor: pointer; background-color: rgb(255,220,60); }
+        .Horse_man:hover + .explain_space4 { cursor: pointer; background-color: rgb(255,220,60); }
 
         .Delacroix, .explain_space5 { transition: all 0.75s ease ; }
-        .Delacroix:hover, .explain_space5:hover { cursor: pointer; background-color: rgb(255,220,60); }
+        .Delacroix:hover + .explain_space5 { cursor: pointer; background-color: rgb(255,220,60); }
 
-        #event_space { width: 100%; height: 668px; position: relative; background-color: rgba(5, 5, 5, 0.85); }
-        #event_space h3 { text-align: center; color: #fff; }
-        #event_space h1 { text-align: center; color: #fff; }
+        .explain_space1:hover, .explain_space2:hover, .explain_space3:hover, .explain_space4:hover, .explain_space5:hover {  background-color: rgb(255,220,60); }
 
-        #rotating_banner_wrap { width: 850px; height: 600px; margin: auto; position: relative; overflow: hidden; 
-                                             cursor: pointer; transition: all 1.5s ease; background: rgba(25, 25, 25, 0.8); }
-        .slide { width: 2250px; height: 100%; }
+        #event_space { width: 100%; height: 718px; position: relative; background-color: rgba(5, 5, 5, 0.85); }
+        #event_space h3 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; }
+        #event_space h1 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; }
+
+        #rotating_banner_wrap { width: 850px; height: 600px; margin: auto; position: relative; overflow: hidden;
+                                             cursor: pointer; transition: all 1s ease; background: rgba(25, 25, 25, 0.8); }
+        .slide { width: 2700px; height: 100%; }
         .slide li { width: 400px; height: 600px; float: left; }
         .siide li img { width: 400px; }
         .left { position: absolute; top: 50%; left: 25%; display: block; font-size: 25px; color:#fff; line-height: 45px;
@@ -109,29 +139,35 @@
         .left:hover { background: rgba(80, 194, 255, 0.75); color: #444; }
         .right:hover { background: rgba(80, 194, 255, 0.75); color: #444; }
 
-        #rotating_banner_wrap .banner_wrap { width: 100%; height: 100%; transition: all 1.5s ease; }
-        #rotating_banner_wrap .banners { transition: all 1.5s ease; }
+        #rotating_banner_wrap .banner_wrap { width: 100%; height: 100%; transition: all 1s ease; }
+        #rotating_banner_wrap .banners { transition: all 1s ease; }
         #rotating_banner_wrap .banner_wrap > img:hover { opacity: 0.75; }
 
         #event_space .rotating_banner { margin-right: 50px; }
 
         #video_title { width: 100%; height: 100px; text-align: center; background-color: lightgray; }
+        #video_title > h1 { padding-top: 25px; font-family: 'Cormorant Unicase', serif; }
         #video_space { width: 100%; height: 800px; overflow: hidden; position: relative;}
         #video_space video { width: 100%; height: auto; position: absolute; top: 50%; transform: translateY(-50%);}
 
-        #Tour_guide_explain { width: 1500px; height: 800px; margin: 0 auto; background-image: url(img/main/tourguide_background.jpg);
+        #Tour_guide_explain { width: 1500px; height: 775px; margin: 0 auto; background-image: url(img/main/tourguide_background.jpg);
                               background-position: center; background-size: cover; }
-        #Tour_guide_explain > h3 { color: #fff; text-align: center; }
-        #Tour_guide_explain > h1 { color: #fff; text-align: center; }
-        #Tour_guide_explain .guide_explain_box { width: 100%; height: 600px; display: flex; flex-wrap: wrap; justify-content: center; }
+        #Tour_guide_explain > h3 { color: #fff; text-align: center; padding-top: 25px; font-family: 'Cormorant Unicase', serif; }
+        #Tour_guide_explain > h1 { color: #fff; text-align: center; padding-bottom: 25px; font-family: 'Cormorant Unicase', serif; }
+
+        #Tour_guide_explain .tour_guides { float: left; }
+
+        #Tour_guide_explain .tour_guide_container { width: 100%; height: 600px; display: flex; flex-wrap: wrap; justify-content: center; font-family: 'Fraunces', serif; }
         #Tour_guide_explain .tour_guide_box { width: 35%; height: 125px; background-color: #fff; margin-left: 25px; border-radius: 20px;
                                               box-shadow: 5px 5px 5px rgba(25, 25, 25, 0.65); }
         .tour_guide_box h3 { color: #333; display: inline-block; text-align: center; }
         .tour_guide_box .tour_guides { vertical-align: top; }
 
-        #souvenir_space { width: 1500px; height: 600px; margin: 0 auto; display: flex; justify-content: center; flex-wrap: wrap; background-color: rgb(225, 225, 225); }
-        #souvenir_space h3 { width: 100%; text-align: center; }
-        #souvenir_space h1 { width: 100%; text-align: center; }
+        #souvenir_space { width: 1500px; height: 650px; margin: 0 auto; background-color: rgb(225, 225, 225); }
+        #souvenir_space h3 { text-align: center; padding-top: 20px; font-family: 'Cormorant Unicase', serif; }
+        #souvenir_space h1 { text-align: center; margin-top: 25px; padding-bottom: 25px; font-family: 'Cormorant Unicase', serif; }
+
+        #souvenir_space .souvenir_container { display: flex; justify-content: center; flex-wrap: wrap; font-family: 'Fraunces', serif; }
 
         #souvenir_space .souvenirs { transition: all 1.5s ease; margin-left: 25px; }
         #souvenir_space .souvenirs:hover { opacity: 0.75; }
@@ -139,10 +175,10 @@
         #souvenir_space .guide_information { display: inline-block; }
 
         #sns_space { width: 100%; height: 600px; position: relative; }
-        #sns_space h3 { text-align: center; }
-        #sns_space h1 { text-align: center; }
+        #sns_space h3 { text-align: center; padding-top: 20px; font-family: 'Cormorant Unicase', serif; }
+        #sns_space h1 { text-align: center; margin-top: 25px; padding-bottom: 20px; font-family: 'Cormorant Unicase', serif; }
 
-        .sns_image1, .sns_image2, .sns_image3, .sns_image4, .sns_image5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1s ease; }
+        .sns_image1, .sns_image2, .sns_image3, .sns_image4, .sns_image5 { width: 20%; height: 100%; background-size: cover; background-position: center; cursor: pointer; transition: all 1s ease; position: relative; }
         .sns_image1:hover, .sns_image2:hover, .sns_image3:hover, .sns_image4:hover, .sns_image5:hover { opacity: 0.75; }
 
         #sns_space .sns_image_container { width: 100%; height: 450px; display: flex; justify-content: center; flex-wrap: wrap; position: relative; }
@@ -152,12 +188,15 @@
         #sns_space .sns_image4 { background-image: url(img/main/sns_image4.jpg); }
         #sns_space .sns_image5 { background-image: url(img/main/sns_image5.jpg); }
 
-        .sns_date1, .sns_date2, .sns_date3, .sns_date4, .sns_date5 { width: 100%; opacity: 0; transition: all 1s ease; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 25px; }
-        #sns_space .sns_image1:hover > .sns_date1:hover { opacity: 1; }
-        #sns_space .sns_image2:hover > .sns_date2:hover { opacity: 1; }
-        #sns_space .sns_image3:hover > .sns_date3:hover { opacity: 1; }
-        #sns_space .sns_image4:hover > .sns_date4:hover { opacity: 1; }
-        #sns_space .sns_image5:hover > .sns_date5:hover { opacity: 1; }
+        .sns_date1, .sns_date2, .sns_date3, .sns_date4, .sns_date5 { width: 100%; opacity: 0; transition: all 1s ease; position: absolute; top: 50%; left: 75%; transform: translate(-50%, -50%); font-size: 25px; }
+        #sns_space .sns_image1:hover > .sns_date1 { opacity: 1; }
+        #sns_space .sns_image2:hover > .sns_date2 { opacity: 1; }
+        #sns_space .sns_image3:hover > .sns_date3 { opacity: 1; }
+        #sns_space .sns_image4:hover > .sns_date4 { opacity: 1; }
+        #sns_space .sns_image5:hover > .sns_date5 { opacity: 1; }
+
+        footer { width: 100%; height: 500px; background: rgb(25, 25, 25); color: #fff; display: flex; justify-content: center; align-items: center; }
+        footer ul { margin-left: 50px; }
         
 
 
@@ -213,7 +252,7 @@
                             <input type="submit" value="submit">
                         </div>
                         <div class="rv_box">
-                            <h2>Sing up audio guide book</h2>
+                            <h2>Sign up audio guide book</h2>
                             <select name="Audio_book">
                                 <option value="english">English</option>
                                 <option value="spanish">Spanish</option>
@@ -283,24 +322,26 @@
         </div>
 
         <div id="exhibition_space2">
+            <div class="sphinx">
+            </div>
             <div class="explain_space2">
                 <b>The Great Sphinx</b> of Tanis is a granite sculpture of a sphinx,
                 whose date may be as early as the 26th century BC.
                 It was discovered in the ruins of the Temple of Amun-Ra in Tanis,
-                Egypt's capital during the 21st Dynasty and the 23rd Dynasty.
+                Egypt's capital during the 21st Dynasty and the 23rd Dynasty.<br>
                 <button class="detail_button">Learn More Details</button>
             </div>
-            <div class="sphinx">
+
+            <div class="the_Venus">
             </div>
             <div class="explain_space3">
                 <b>The Venus de Milo</b> is an ancient Greek sculpture that was created during the Hellenistic period,
                 sometime between 150 and 125 BC. It is one of the most famous works of ancient Greek sculpture,
                 having been prominently displayed at the Louvre Museum since shortly after the statue was rediscovered
-                on the island of Milos, Greece, in 1820.
+                on the island of Milos, Greece, in 1820.<br>
                 <button class="detail_button">Learn More Details</button>
             </div>
-            <div class="the_Venus">
-            </div>
+
         </div>
 
         <div id="exhibition_space3">
@@ -311,7 +352,7 @@
                 by the French painter Théodore Géricault, portraying a mounted
                 Napoleonic cavalry officer who is ready to attack.
                 The painting was Géricault's first exhibited work and it is
-                an example of Géricault's attempt to condense both movement and structure in its art.
+                an example of Géricault's attempt to condense both movement and structure in its art.<br>
                 <button class="detail_button">Learn More Details</button>
             </div>
             <div class="Delacroix">
@@ -322,7 +363,7 @@
                 which toppled King Charles X of France. A woman of the people
                 with a Phrygian cap personifying the concept of Liberty leads
                 a varied group of people forward over a barricade and
-                the bodies of the fallen.
+                the bodies of the fallen.<br>
                 <button class="detail_button">Learn More Details</button>
             </div>
         </div>
@@ -373,10 +414,9 @@
         <script>
 
             function Left(){
-                $('.slide').stop().animate({marginRight: -450}, function(){
-                    $('.slide li:last').prependTo('.slide');
-                        $('.slide').css({marginRight: 0});
-                });
+                $('.slide li:last').prependTo('.slide');
+                $('.slide').css({marginLeft: -450});
+                $('.slide').stop().animate({marginLeft: 0});
             }
 
             function Right(){
@@ -409,13 +449,13 @@
         </div>
 
         <div id="video_space">
-            <!-- <video src="img/main/Le Louvre.mp4" loop muted autoplay></video> -->
+            <video src="img/main/Le Louvre.mp4" loop muted autoplay></video>
         </div>
 
         <div id="Tour_guide_explain">
             <h3>Veteran Tour guides</h3>
             <h1>With a guide that you can trust!</h1>
-            <div class="guide_explain_box">
+            <div class="tour_guide_container">
                 <div class="tour_guide_box">
                     <img src="img/main/tourguide_english.png" class="tour_guides" alt="투어 가이드">
                     <h3>Brian Grant</h3>
@@ -502,18 +542,21 @@
         <div id="souvenir_space">
             <h3>Buy Souvenir</h3>
             <h1>Carry on a beautiful legacy with antique souvenirs</h1>
-            <div class="souvenir_box">
-                <a href="#"><img src="img/main/museum_souvenir1.jpg" class="souvenirs" alt="황금 피라미드"></a>
-                <h2>The Golden Pyramid</h2>
+            <div class="souvenir_container">
+                <div class="souvenir_box">
+                    <a href="#"><img src="img/main/museum_souvenir1.jpg" class="souvenirs" alt="황금 피라미드"></a>
+                    <h2>The Golden Pyramid</h2>
+                </div>
+                <div class="souvenir_box">
+                    <a href="#"><img src="img/main/museum_souvenir2.jpg" class="souvenirs" alt="왕실 문양의 잔"></a>
+                    <h2>14th Century Royal Goblet</h2>
+                </div>
+                <div class="souvenir_box">
+                    <a href="#"><img src="img/main/museum_souvenir3.jpg" class="souvenirs" alt="파리 기념물 자석"></a>
+                    <h2>Paris's Heritage Fridge Magnet</h2>
+                </div>
             </div>
-            <div class="souvenir_box">
-                <a href="#"><img src="img/main/museum_souvenir2.jpg" class="souvenirs" alt="왕실 문양의 잔"></a>
-                <h2>14th Century Royal Goblet</h2>
-            </div>
-            <div class="souvenir_box">
-                <a href="#"><img src="img/main/museum_souvenir3.jpg" class="souvenirs" alt="파리 기념물 자석"></a>
-                <h2>Paris's Heritage Fridge Magnet</h2>
-            </div>
+
         </div>
 
         <div id="sns_space">
@@ -549,6 +592,32 @@
                 </div>
             <div>
         </div>
+
+        <footer>
+            <ul>
+                <li>The public establishment</li>
+                <li>Visit rules</li>
+                <li>Loans and deposits</li>
+                <li>Public procurement and state occupation</li>
+                <li>Administrative acts</li>
+            </ul>
+
+            <ul>
+                <li>Ticket office</li>
+                <li>online shop</li>
+                <li>collections</li>
+                <li>online donation</li>
+                <li>Editions</li>
+            </ul>
+
+            <ul>
+                <li>FAQ</li>
+                <li>contacts</li>
+                <li>Give us your opinion!</li>
+                <li>Job offers</li>
+                <li>Privatizations and filming</li>
+            </ul>
+        </footer>
 
         
 
