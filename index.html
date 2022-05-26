@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louvre Museum</title>
+
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
@@ -19,8 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Public+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Public+Sans&display=swap" rel="stylesheet">
 
 
     <style>
@@ -82,13 +84,24 @@
         section .welcome { font-size: 22px; font-family: 'Cormorant Unicase', serif; margin-top: 25px; }
         section .section_subject { font-size: 45px; font-family: 'Cormorant Unicase', serif; padding-bottom: 35px; }
         section .famous_room { width: 1500px; height: 300px; display: flex; justify-content: center; }
-        .famous1, .famous2, .famous3, .famous4, .famous5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; }
+        .famous1, .famous2, .famous3, .famous4, .famous5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; position: relative; }
         section .famous1 { background-image: url(img/main/Napoleon_III_salon.jpg); }
         section .famous2 { background-image: url(img/main/Louis_XIV_room.jpg); }
         section .famous3 { background-image: url(img/main/epyption_hall.jpg); }
         section .famous4 { background-image: url(img/main/renaissance_painting.jpg); }
         section .famous5 { background-image: url(img/main/french_painting.jpg); }
         .famous1:hover, .famous2:hover, .famous3:hover, .famous4:hover, .famous5:hover { opacity: 0.7; }
+
+        .napoleon_iii_salon, .louis_XIV_room, .egyption_hall, .renaissance_painting_hall, .french_painting_hall { width: 100%; opacity: 0; transition: all 1s ease; position: absolute; top: 50%; left: 50%; 
+                                                                                                                 transform: translate(-50%, -50%); font-weight: bold; font-size: 22px; color: rgb(238, 233, 133); }
+
+        .detail_button { width: 125px; height: 50px; cursor: pointer; background: rgb(205, 197, 191); border: 2px solid gray; }
+        .detail_button:hover { background: rgb(157, 160, 212);  }
+        .famous1:hover > .napoleon_iii_salon { opacity: 1; }
+        .famous2:hover > .louis_XIV_room { opacity: 1; }
+        .famous3:hover > .egyption_hall { opacity: 1; }
+        .famous4:hover > .renaissance_painting_hall { opacity: 1; }
+        .famous5:hover > .french_painting_hall { opacity: 1; }
         
         #introduction_space { width: 100%; height: 160px; background-color: lightgray; text-align: center; }
         #introduction_space .is_subtitle { font-size: 22px; padding-top: 25px; font-family: 'Cormorant Unicase', serif;  }
@@ -178,16 +191,26 @@
         .tour_guide_box h3 { color: #333; display: inline-block; text-align: center; }
         .tour_guide_box .tour_guides { vertical-align: top; }
 
-        #souvenir_space { width: 1500px; height: 650px; margin: 0 auto; background-color: rgb(225, 225, 225); }
+        #souvenir_space { width: 1500px; margin: 0 auto; height: 650px; background-color: rgb(225, 225, 225); position: relative; }
         #souvenir_space h3 { text-align: center; padding-top: 20px; font-family: 'Cormorant Unicase', serif; font-size: 22px; }
         #souvenir_space h1 { text-align: center; margin-top: 25px; padding-bottom: 25px; font-family: 'Cormorant Unicase', serif; font-size: 35px; }
 
-        #souvenir_space .souvenir_container { display: flex; justify-content: center; flex-wrap: wrap; font-family: 'Fraunces', serif; }
+        #souvenir_space .souvenir_container { width: 100%; height: 70%; position: relative; display: flex; justify-content: center; flex-wrap: wrap; font-family: 'Fraunces', serif; }
 
-        #souvenir_space .souvenirs { transition: all 1.5s ease; margin-left: 25px; }
-        #souvenir_space .souvenirs:hover { opacity: 0.75; }
-        #souvenir_space .souvenir_box { text-align: center; }
+        .souvenir_container .souvenir_bigbox1 { width: 500px; min-height: 400px; position: relative; height: auto; background: #0b0b0b; }
+        .souvenir_container .souvenir_bigbox2 { width: 500px; min-height: 400px; position: relative; height: auto; background: #fefefe; }
+        .souvenir_container .souvenir_bigbox3 { width: 500px; min-height: 400px; position: relative; height: auto; background: #f7f8fc; }
+        
+        
+        #souvenir_space .souvenir_box1 { background: url(img/main/museum_souvenir1.png); width: 100%; min-height: 90%;
+                                         height: auto; position: absolute; top: 0; z-index: 0; background-repeat: no-repeat; background-position: center; }
+        #souvenir_space .souvenir_box2 { background: url(img/main/museum_souvenir2.png); width: 100%; min-height: 88.8%; 
+                                         height: auto; position: absolute; top: 0; z-index: 0; background-repeat: no-repeat;  background-position: center; }
+        #souvenir_space .souvenir_box3 { background: url(img/main/museum_souvenir3.png); width: 100%; min-height: 94.5%; 
+                                         height: auto;  position: absolute; top: 0; z-index: 0; background-repeat: no-repeat;  background-position: center; }
         #souvenir_space .guide_information { display: inline-block; }
+        #souvenir_space .product_name1 { color: #fff; text-align: center; }
+        #souvenir_space .product_name2 { text-align: center; }
 
         #sns_space { width: 100%; height: 600px; position: relative; }
         #sns_space h3 { text-align: center; padding-top: 20px; font-family: 'Cormorant Unicase', serif; font-size: 22px; }
@@ -213,8 +236,8 @@
         #sns_space .insta_icon + b { vertical-align: center; }
 
         footer { width: 100%; height: 350px; background: rgb(25, 25, 25); color: #fff; font-family: 'Bree Serif', serif; text-align: center; }
-        .footer_container1, .footer_container2 { width: 100%; display: flex; justify-content: center; align-items: center; }
-        .footer_container1 .footer_subject { margin-left: 50px; }
+        .footer_container { width: 100%; display: flex; justify-content: space-around; align-items: baseline; }
+        .footer_container .footer_subject { font-weight: bold; font-size: 20px; }
         footer ul { margin-left: 50px; }
         footer ul li { margin-top: 25px; }
 
@@ -334,14 +357,44 @@
                 </div>
             </div>
             <p class="welcome">Welcome to Louvre Museum</p>
-            <h1 class="section_subject">The Halls of Famous Treasures</h1>
+            <h1 class="section_subject">The Rooms of Famous Masterpiece</h1>
 
             <div class="famous_room">
-                <div class="famous1"></div>
-                <div class="famous2"></div>
-                <div class="famous3"></div>
-                <div class="famous4"></div>
-                <div class="famous5"></div>
+                <div class="famous1">
+                    <div class="napoleon_iii_salon">
+                        Richelieu wing, Room 544<br>
+                        Napoleon III Apartments: the Grand Salon<br>
+                        <button class="detail_button">Learn more details</button>
+                    </div>
+                </div>
+                <div class="famous2">
+                    <div class="louis_XIV_room">
+                        Sully Wing, Room 631<br>
+                        Louis XIV room<br>
+                        <button class="detail_button">Learn more details</button>
+                    </div>
+                </div>
+                <div class="famous3">
+                    <div class="egyption_hall">
+                        Sully Wing, 1~14Room first floor<br>
+                        Egyption hall<br>
+                        <button class="detail_button">Learn more details</button>
+                    </div>
+                </div>
+                <div class="famous4">
+                    <div class="renaissance_painting_hall">
+                        Denon Wing, 1~8Room first floor<br>
+                        Renaissance painting hall<br>
+                        <button class="detail_button">Learn more details</button>
+                    </div>
+                </div>
+                <div class="famous5">
+                    <div class="french_painting_hall">
+                        Denon Wing, Rooms 75-77<br>
+                        French painting hall<br>
+                        <button class="detail_button">Learn more details</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -590,21 +643,51 @@
             <h3>Buy Souvenir</h3>
             <h1>Carry on a beautiful legacy with antique souvenirs</h1>
             <div class="souvenir_container">
-                <div class="souvenir_box">
-                    <a href="#"><img src="img/main/museum_souvenir1.jpg" class="souvenirs" alt="황금 피라미드"></a>
-                    <h2>The Golden Pyramid</h2>
+                <div class="souvenir_bigbox1">
+                    <div class="souvenir_box1"></div>
+                    <h2 class="product_name1">The Golden Pyramid</h2>
                 </div>
-                <div class="souvenir_box">
-                    <a href="#"><img src="img/main/museum_souvenir2.jpg" class="souvenirs" alt="왕실 문양의 잔"></a>
-                    <h2>14th Century Royal Goblet</h2>
+        
+                <div class="souvenir_bigbox2">
+                    <div class="souvenir_box2"></div>
+                    <h2 class="product_name2">14th Century Royal Goblet</h2>
                 </div>
-                <div class="souvenir_box">
-                    <a href="#"><img src="img/main/museum_souvenir3.jpg" class="souvenirs" alt="파리 기념물 자석"></a>
-                    <h2>Paris's Heritage Fridge Magnet</h2>
+        
+                <div class="souvenir_bigbox3">
+                    <div class="souvenir_box3"></div>
+                    <h2 class="product_name2">Paris's Heritage Fridge Magnet</h2>
                 </div>
             </div>
-
+        
         </div>
+
+        <script>
+            $(document).ready(function(){
+            
+                var pixelToMove = 50;
+                $(".souvenir_box1").mousemove(function(e){
+                    var width = $(this).innerWidth();
+                    var height = $(this).innerHeight();
+                    var newValueX = (e.pageX/width)*pixelToMove;
+                    var newValueY = (e.pageY/height)*pixelToMove;
+                    $(this).css('background-position', newValueX+'%'+''+newValueY+'%');
+                });
+                $(".souvenir_box2").mousemove(function(e){
+                    var width = $(this).innerWidth();
+                    var height = $(this).innerHeight();
+                    var newValueX = (e.pageX/width)*pixelToMove;
+                    var newValueY = (e.pageY/height)*pixelToMove;
+                    $(this).css('background-position', newValueX+'%'+''+newValueY+'%');
+                });
+                $(".souvenir_box3").mousemove(function(e){
+                    var width = $(this).innerWidth();
+                    var height = $(this).innerHeight();
+                    var newValueX = (e.pageX/width)*pixelToMove;
+                    var newValueY = (e.pageY/height)*pixelToMove;
+                    $(this).css('background-position', newValueX+'%'+''+newValueY+'%');
+                });
+            });
+        </script>
 
         <div id="sns_space">
             <h3>Instagram
@@ -642,14 +725,9 @@
 
         <footer>
 
-                <div class="footer_container1">
-                    <h3 class="footer_subject"><a href="#">The public establishment</a></h3>
-                    <h3 class="footer_subject"><a href="#">Ticket office</a></h3>
-                    <h3 class="footer_subject"><a href="#">FAQ</a></h3>
-                </div>
-
-            <div class="footer_container2">
+            <div class="footer_container">
                 <ul>
+                    <li class="footer_subject"><a href="#">The public establishment</a></li>
                     <li><a href="#">Visit rules</a></li>
                     <li><a href="#">Loans and deposits</a></li>
                     <li><a href="#">Public procurement and state occupation</a></li>
@@ -657,6 +735,7 @@
                 </ul>
 
                 <ul>
+                    <li class="footer_subject"><a href="#">Ticket office</a></li>
                     <li><a href="#">online shop</a></li>
                     <li><a href="#">collections</a></li>
                     <li><a href="#">online donation</a></li>
@@ -664,6 +743,7 @@
                 </ul>
 
                 <ul>
+                    <li class="footer_subject"><a href="#">FAQ</a></li>
                     <li><a href="#">contacts</a></li>
                     <li><a href="#">Give us your opinion!</a></li>
                     <li><a href="#">Job offers</a></li>
