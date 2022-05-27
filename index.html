@@ -12,16 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Public+Sans&display=swap" rel="stylesheet">
 
 
@@ -33,7 +27,7 @@
         section a:visited { color: #fff; }
         footer a:visited { color: #fff; }
 
-        #wrap { width: 1920px; height: auto; margin: 0 auto;  }
+        #wrap { width: 100%; height: auto; margin: 0 auto; position: relative; overflow-x: hidden; }
         header { width: 100%; height: 200px; margin: 0 auto; color: #fff; position: absolute; z-index: 6; top: 0; left: 0; right: 0; }
         header .main_subject { width: 300px; height: 100px; font-size: 120px; float: left; font-family: 'Cormorant Unicase', serif;
                                padding-top: 50px; margin-left: 100px; }
@@ -66,12 +60,13 @@
         .rv_payment button { width: 100px; height: 40px; background: rgb(210, 210, 210); cursor: pointer; font-family: 'Bree Serif', serif; }
         .rv_payment button:hover { background: rgb(185, 185, 210); }
 
+
         input[type=date], input[type=time] { width: 110px; height: 30px; background: rgb(216, 245, 255); border: 1px solid silver; margin-top: 25px; cursor: pointer; }
-        input[type=submit] { width: 55px; height: 30px; border-radius: 50px; border: 1px solid silver; background: rgb(195, 233, 145); cursor: pointer; }
-        input:hover[type=submit] { background: rgb(170, 208, 145); }
+        input[type=submit] { width: 55px; height: 30px; border: 1px solid silver; background: rgb(240, 230, 140); cursor: pointer; }
+        input:hover[type=submit] { background: rgb(215, 205, 140); }
         #slider .announcement { color: #fff; font-size: 12px; font-family: 'Public Sans', sans-serif; }
 
-        section { width: 1500px; height: 850px; margin: 0 auto; text-align: center; }
+        section { width: 1500px; height: 900px; margin: 0 auto; text-align: center; }
         section .louvre_wings { width: 1500px; height: 333px; text-align: center; display: flex;
                                 justify-content: space-between; font-weight: bold; color: #fff;
                                 font-size: 20px; position: relative; }
@@ -81,8 +76,8 @@
         .wing_image2 { width: 34%; background-image: url(img/main/denon_wing.jpeg); }
         .wing_image3 { width: 33%; background-image: url(img/main/sully_wing.jpg); }
         .wing_image1:hover, .wing_image2:hover, .wing_image3:hover { opacity: 0.7; }
-        section .welcome { font-size: 22px; font-family: 'Cormorant Unicase', serif; margin-top: 25px; }
-        section .section_subject { font-size: 45px; font-family: 'Cormorant Unicase', serif; padding-bottom: 35px; }
+        section .welcome { font-size: 22px; font-family: 'Cormorant Unicase', serif; margin-top: 55px; }
+        section .section_subject { font-size: 45px; font-family: 'Cormorant Unicase', serif; padding-bottom: 65px; }
         section .famous_room { width: 1500px; height: 300px; display: flex; justify-content: center; }
         .famous1, .famous2, .famous3, .famous4, .famous5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; position: relative; }
         section .famous1 { background-image: url(img/main/Napoleon_III_salon.jpg); }
@@ -93,7 +88,8 @@
         .famous1:hover, .famous2:hover, .famous3:hover, .famous4:hover, .famous5:hover { opacity: 0.7; }
 
         .napoleon_iii_salon, .louis_XIV_room, .egyption_hall, .renaissance_painting_hall, .french_painting_hall { width: 100%; opacity: 0; transition: all 1s ease; position: absolute; top: 50%; left: 50%; 
-                                                                                                                 transform: translate(-50%, -50%); font-weight: bold; font-size: 22px; color: rgb(238, 233, 133); }
+                                                                                                                  transform: translate(-50%, -50%); font-weight: bold; 
+                                                                                                                  font-size: 22px; color: #0AFF84; font-family: 'Public Sans', sans-serif; }
 
         .detail_button { width: 125px; height: 50px; cursor: pointer; background: rgb(205, 197, 191); border: 2px solid gray; }
         .detail_button:hover { background: rgb(157, 160, 212);  }
@@ -103,18 +99,19 @@
         .famous4:hover > .renaissance_painting_hall { opacity: 1; }
         .famous5:hover > .french_painting_hall { opacity: 1; }
         
-        #introduction_space { width: 100%; height: 160px; background-color: lightgray; text-align: center; }
-        #introduction_space .is_subtitle { font-size: 22px; padding-top: 25px; font-family: 'Cormorant Unicase', serif;  }
+        #introduction_space { width: 100%; height: 210px; background-color: lightgray; text-align: center; }
+        #introduction_space .is_subtitle { font-size: 22px; padding-top: 45px; font-family: 'Cormorant Unicase', serif;  }
         #introduction_space .is_title { font-size: 45px; font-family: 'Cormorant Unicase', serif; }
 
-        #exhibition_space1 { width: 100%; height: 373px; display: flex; font-family: 'Fraunces', serif; }
+        #exhibition_space1 { width: 100%; height: 373px; display: flex; font-family: 'Public Sans', sans-serif; }
         #exhibition_space1 .museum_map { width: 50%; height: 373px; background-image: url(img/main/Louvre_map.jpg); background-size: cover;
                                          background-position: center; }
         #exhibition_space1 .mona_lisa { width: 25%; height: 373px; background-image: url(img/main/Mona_Lisa.jpg); background-size: cover;
                                            background-position: top; cursor: pointer; }
         #exhibition_space1 .explain_space1 { width: 25%; height: 373px; font-size: 20px; text-align: center; padding-top: 50px; }
+        .explain_space1 > b { font-family: 'Fraunces', serif; }
 
-        #exhibition_space2 { width: 100%; height: 375px; display: flex; font-family: 'Fraunces', serif; }                           
+        #exhibition_space2 { width: 100%; height: 375px; display: flex; font-family: 'Public Sans', sans-serif; }                           
         #exhibition_space2 .sphinx { width: 25%; height: 375px; background-image: url(img/main/Sphinx.jpg); background-size: cover;
                                      background-position: center; cursor: pointer; order: 1;}
         #exhibition_space2 .explain_space2 { width: 25%; height: 375px; order: 0; font-size: 20px; text-align: center; padding-top: 50px; }
@@ -122,14 +119,18 @@
                                         background-position: top; cursor: pointer; order: 3;}
 
         #exhibition_space2 .explain_space3 { width: 25%; height: 375px; order: 2; font-size: 20px; text-align: center; padding-top: 50px; }
+        .explain_space2 > b , .explain_space3 > b { font-family: 'Fraunces', serif; }
 
-        #exhibition_space3 { width: 100%; height: 375px; display: flex; font-family: 'Fraunces', serif; }
+
+        #exhibition_space3 { width: 100%; height: 375px; display: flex; font-family: 'Public Sans', sans-serif; }
         #exhibition_space3 .Horse_man { width: 25%; height: 375px; background-image: url(img/main/Horseman.jpg); background-size: cover;
                                         background-position: center; cursor: pointer; }
         #exhibition_space3 .explain_space4 { width: 25%; height: 375px; font-size: 20px; text-align: center; padding-top: 50px; }
         #exhibition_space3 .Delacroix { width: 25%; height: 375px; background-image: url(img/main/Delacroix.jpg); background-size: cover;
                                         background-position: center; cursor: pointer; }
         #exhibition_space3 .explain_space5 { width: 25%; height: 375px; font-size: 20px; text-align: center; padding-top: 50px; }
+        .explain_space4 > b , .explain_space5 > b { font-family: 'Fraunces', serif; }
+
         .detail_button { width: 175px; height: 50px; cursor: pointer; background: rgb(182, 185, 212); border: 2px solid gray; 
                          font-family: 'Bree Serif', serif; margin-top: 50px; color: #fff; }
         .detail_button:hover { background: rgb(157, 160, 212); }
@@ -151,9 +152,9 @@
 
         .explain_space1:hover, .explain_space2:hover, .explain_space3:hover, .explain_space4:hover, .explain_space5:hover {  background-color: rgb(255,220,60); }
 
-        #event_space { width: 100%; height: 743px; position: relative; background-color: rgba(5, 5, 5, 0.85); }
-        #event_space h3 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-top: 50px; }
-        #event_space h1 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-bottom: 30px; }
+        #event_space { width: 100%; height: 783px; position: relative; background-color: rgba(5, 5, 5, 0.85); }
+        #event_space h3 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-top: 70px; }
+        #event_space h1 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-bottom: 50px; }
 
         #rotating_banner_wrap { width: 850px; height: 600px; margin: auto; position: relative; overflow: hidden;
                                              cursor: pointer; transition: all 1s ease; background: rgba(25, 25, 25, 0.8); }
@@ -173,27 +174,27 @@
 
         #event_space .rotating_banner { margin-right: 50px; }
 
-        #video_title { width: 100%; height: 100px; text-align: center; background-color: lightgray; font-size: 25px; }
-        #video_title > h1 { padding-top: 25px; font-family: 'Cormorant Unicase', serif; }
+        #video_title { width: 100%; height: 150px; text-align: center; background-color: lightgray; font-size: 25px; }
+        #video_title > h1 { padding-top: 50px; font-family: 'Cormorant Unicase', serif; }
         #video_space { width: 100%; height: 800px; overflow: hidden; position: relative;}
         #video_space video { width: 100%; height: auto; position: absolute; top: 50%; transform: translateY(-50%);}
 
-        #Tour_guide_explain { width: 1500px; height: 775px; margin: 0 auto; background-image: url(img/main/tourguide_background.jpg);
+        #Tour_guide_explain { width: 1500px; height: 825px; margin: 0 auto; background-image: url(img/main/tourguide_background.jpg);
                               background-position: center; background-size: cover; }
-        #Tour_guide_explain > h3 { color: #fff; text-align: center; padding-top: 25px; font-family: 'Cormorant Unicase', serif; }
-        #Tour_guide_explain > h1 { color: #fff; text-align: center; padding-bottom: 25px; font-family: 'Cormorant Unicase', serif; }
+        #Tour_guide_explain > h3 { color: #fff; text-align: center; padding-top: 50px; font-family: 'Cormorant Unicase', serif; font-size: 25px; }
+        #Tour_guide_explain > h1 { color: #fff; text-align: center; padding-bottom: 50px; font-family: 'Cormorant Unicase', serif; font-size: 45px; }
 
         #Tour_guide_explain .tour_guides { float: left; }
 
-        #Tour_guide_explain .tour_guide_container { width: 100%; height: 600px; display: flex; flex-wrap: wrap; justify-content: center; font-family: 'Fraunces', serif; }
+        #Tour_guide_explain .tour_guide_container { width: 100%; height: 600px; display: flex; flex-wrap: wrap; justify-content: center; font-family: 'Public Sans', sans-serif; }
         #Tour_guide_explain .tour_guide_box { width: 35%; height: 125px; background-color: #fff; margin-left: 25px; border-radius: 20px;
                                               box-shadow: 5px 5px 5px rgba(25, 25, 25, 0.65); }
-        .tour_guide_box h3 { color: #333; display: inline-block; text-align: center; }
+        .tour_guide_box h3 { color: #333; display: inline-block; text-align: center; font-family: 'Fraunces', serif; }
         .tour_guide_box .tour_guides { vertical-align: top; }
 
         #souvenir_space { width: 1500px; margin: 0 auto; height: 650px; background-color: rgb(225, 225, 225); position: relative; }
-        #souvenir_space h3 { text-align: center; padding-top: 20px; font-family: 'Cormorant Unicase', serif; font-size: 22px; }
-        #souvenir_space h1 { text-align: center; margin-top: 25px; padding-bottom: 25px; font-family: 'Cormorant Unicase', serif; font-size: 35px; }
+        #souvenir_space h3 { text-align: center; padding-top: 50px; font-family: 'Cormorant Unicase', serif; font-size: 22px; }
+        #souvenir_space h1 { text-align: center; padding-bottom: 55px; padding-bottom: 25px; font-family: 'Cormorant Unicase', serif; font-size: 35px; }
 
         #souvenir_space .souvenir_container { width: 100%; height: 70%; position: relative; display: flex; justify-content: center; flex-wrap: wrap; font-family: 'Fraunces', serif; }
 
@@ -212,14 +213,14 @@
         #souvenir_space .product_name1 { color: #fff; text-align: center; }
         #souvenir_space .product_name2 { text-align: center; }
 
-        #sns_space { width: 100%; height: 600px; position: relative; }
-        #sns_space h3 { text-align: center; padding-top: 20px; font-family: 'Cormorant Unicase', serif; font-size: 22px; }
-        #sns_space h1 { text-align: center; margin-top: 25px; padding-bottom: 20px; font-family: 'Cormorant Unicase', serif; font-size: 35px; }
+        #sns_space { width: 100%; height: 650px; position: relative; }
+        #sns_space h3 { text-align: center; padding-top: 65px; font-family: 'Cormorant Unicase', serif; font-size: 22px; }
+        #sns_space h1 { text-align: center; padding-bottom: 50px; font-family: 'Cormorant Unicase', serif; font-size: 35px; }
 
         .sns_image1, .sns_image2, .sns_image3, .sns_image4, .sns_image5 { width: 20%; height: 100%; background-size: cover; background-position: center; cursor: pointer; transition: all 1s ease; position: relative; }
         .sns_image1:hover, .sns_image2:hover, .sns_image3:hover, .sns_image4:hover, .sns_image5:hover { opacity: 0.75; }
 
-        #sns_space .sns_image_container { width: 100%; height: 450px; display: flex; justify-content: center; flex-wrap: wrap; position: relative; }
+        #sns_space .sns_image_container { width: 100%; height: 450px; display: flex; justify-content: center; flex-wrap: wrap; position: relative; font-family: 'Public Sans', sans-serif; color:#fff; }
         #sns_space .sns_image1 { background-image: url(img/main/sns_image1.jpg); }
         #sns_space .sns_image2 { background-image: url(img/main/sns_image2.jpg); }
         #sns_space .sns_image3 { background-image: url(img/main/sns_image3.jpg); }
@@ -233,14 +234,18 @@
         #sns_space .sns_image4:hover > .sns_date4 { opacity: 1; }
         #sns_space .sns_image5:hover > .sns_date5 { opacity: 1; }
 
-        #sns_space .insta_icon + b { vertical-align: center; }
+        #sns_space .insta_icon { vertical-align: middle; }
 
-        footer { width: 100%; height: 350px; background: rgb(25, 25, 25); color: #fff; font-family: 'Bree Serif', serif; text-align: center; }
-        .footer_container { width: 100%; display: flex; justify-content: space-around; align-items: baseline; }
+        footer { width: 100%; height: 350px; background: rgb(25, 25, 25); color: #fff; font-family: 'Bree Serif', serif; text-align: center; margin-top: -8px; }
+        .footer_container { width: 75%; display: flex; justify-content: space-around; align-items: center; padding-left: 160px; padding-top: 50px; }
         .footer_container .footer_subject { font-weight: bold; font-size: 20px; }
         footer ul { margin-left: 50px; }
         footer ul li { margin-top: 25px; }
 
+        .footer_container > .logo { color: #fff; font-size: 90px; font-family: 'Cormorant Unicase', serif; }
+
+        .popup_box1, .popup_box2, .popup_box3, .popup_box4, .popup_box5 { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; display: none; background-color: rgba(0, 0, 0, 0.75); }
+        .popup_box1 img, .popup_box2 img, .popup_box3 img, .popup_box4 img, .popup_box5 img  { position:absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); }
         
 
 
@@ -253,13 +258,13 @@
             <div id="slider">
                 <div class="main_rotating_image">
                     <div class="slide_images fade">
-                        <img src="img/main/Louvre_slider1.jpg" alt="메인 이미지">
+                        <img src="img/main/Louvre_slider1.jpg" alt="메인 이미지" class="slider_main_image">
                     </div>
                     <div class="slide_images fade">
-                        <img src="img/main/Louvre_slider2.jpg" alt="메인 이미지">
+                        <img src="img/main/Louvre_slider2.jpg" alt="메인 이미지" class="slider_main_image">
                     </div>
                     <div class="slide_images fade">
-                        <img src="img/main/Louvre_slider3.jpg" alt="메인 이미지">
+                        <img src="img/main/Louvre_slider3.jpg" alt="메인 이미지" class="slider_main_image">
                     </div>
                     
 
@@ -691,7 +696,7 @@
 
         <div id="sns_space">
             <h3>Instagram
-                <img src="img/main/instagram_icon1.jpg" alt="인스타드램 아이콘">
+                <img src="img/main/instagram_icon1.jpg" alt="인스타드램 아이콘" class="insta_icon">
             </h3>
             <h1> Please engrave the memories you want to keep</h1>
             <div class="sns_image_container">
@@ -726,6 +731,7 @@
         <footer>
 
             <div class="footer_container">
+                <h1 class="logo"><a href="#">Louvre</a></h1>
                 <ul>
                     <li class="footer_subject"><a href="#">The public establishment</a></li>
                     <li><a href="#">Visit rules</a></li>
@@ -749,8 +755,67 @@
                     <li><a href="#">Job offers</a></li>
                     <li><a href="#">Privatizations and filming</a></li>
                 </ul>
+
+                <div class="sns_icons">
+                    
+                </div>
             </div>
         </footer>
+
+        <div class="popup_box1">
+            <img src="img/main/sns_big_image1.jpg" alt="인스타그램 이미지">
+        </div>
+        <div class="popup_box2">
+            <img src="img/main/sns_big_image2.jpg" alt="인스타그램 이미지">
+        </div>
+        <div class="popup_box3">
+            <img src="img/main/sns_big_image3.jpg" alt="인스타그램 이미지">
+        </div>
+        <div class="popup_box4">
+            <img src="img/main/sns_big_image4.jpg" alt="인스타그램 이미지">
+        </div>
+        <div class="popup_box5">
+            <img src="img/main/sns_big_image5.jpg" alt="인스타그램 이미지">
+        </div>
+
+
+        <script>
+            $(function(){
+                $('.sns_image1').click(function(){
+                    $('.popup_box1').fadeIn();
+                });
+                $('.sns_image2').click(function(){
+                    $('.popup_box2').fadeIn();
+                });
+                $('.sns_image3').click(function(){
+                    $('.popup_box3').fadeIn();
+                });
+                $('.sns_image4').click(function(){
+                    $('.popup_box4').fadeIn();
+                });
+                $('.sns_image5').click(function(){
+                    $('.popup_box5').fadeIn();
+                });
+
+
+                $('.popup_box1').not().click(function(){
+                    $(this).fadeOut();
+                });
+
+                $('.popup_box2').not().click(function(){
+                    $(this).fadeOut();
+                });
+                $('.popup_box3').not().click(function(){
+                    $(this).fadeOut();
+                });
+                $('.popup_box4').not().click(function(){
+                    $(this).fadeOut();
+                });
+                $('.popup_box5').not().click(function(){
+                    $(this).fadeOut();
+                });
+            });
+        </script>
 
         
 
