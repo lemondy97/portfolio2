@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+
+
+
+        section { width: 1500px; height: 900px; margin: 0 auto; text-align: center; }
+        section > #louvre_wings { width: 1500px; height: 333px; text-align: center; display: flex;
+                                justify-content: space-between; font-weight: bold;
+                                font-size: 20px; position: relative; }
+        #louvre_wings .titles { text-align: center; font-size: 23px; font-family: 'Fraunces', serif; color: #ffe4b5; }
+        #wing_image1, #wing_image2, #wing_image3 { cursor: pointer; transition: all 1.5s ease; background-size: cover; background-position: center; position: relative; }
+        #wing_image1 { width: 33%; background-image: url(../img/main/richelieu_wing1.jpg); }
+        #wing_image2 { width: 34%; background-image: url(../img/main/denon_wing1.jpeg); }
+        #wing_image3 { width: 33%; background-image: url(../img/main/sully_wing1.jpg); }
+        #wing_image1:hover, #wing_image2:hover, #wing_image3:hover { opacity: 0.8; }
+
+        #louvre_wings .click_sign { opacity: 0; font-size: 18px; transition: all 0.75s ease; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                                    color: #111; font-size: 28px; font-family: 'Public Sans', sans-serif; }
+        #wing_image1:hover > .click_sign { opacity: 1; }
+        #wing_image2:hover > .click_sign { opacity: 1; }
+        #wing_image3:hover > .click_sign { opacity: 1; }
+
+
+        section .welcome { font-size: 22px; font-family: 'Cormorant Unicase', serif; margin-top: 55px; }
+        section .section_subject { font-size: 45px; font-family: 'Cormorant Unicase', serif; padding-bottom: 65px; }
+        section .famous_room { width: 1500px; height: 300px; display: flex; justify-content: center; }
+        .famous1, .famous2, .famous3, .famous4, .famous5 { width: 20%; background-size: cover; background-position: center; cursor: pointer; transition: all 1.5s ease; position: relative; }
+        section .famous1 { background-image: url(../img/main/Napoleon_III_salon.jpg); }
+        section .famous2 { background-image: url(../img/main/Louis_XIV_room.jpg); }
+        section .famous3 { background-image: url(../img/main/epyption_hall.jpg); }
+        section .famous4 { background-image: url(../img/main/renaissance_painting.jpg); }
+        section .famous5 { background-image: url(../img/main/french_painting.jpg); }
+        .famous1:hover, .famous2:hover, .famous3:hover, .famous4:hover, .famous5:hover { opacity: 0.8; }
+
+        .napoleon_iii_salon, .louis_XIV_room, .egyption_hall, .renaissance_painting_hall, .french_painting_hall { width: 100%; opacity: 0; transition: all 1s ease; position: absolute; top: 50%; left: 50%; 
+                                                                                                                  transform: translate(-50%, -50%); font-weight: bold; 
+                                                                                                                  font-size: 22px; color: #111; font-family: 'Public Sans', sans-serif; }
+
+        section .detail_button { width: 125px; height: 50px; cursor: pointer; background: rgb(255, 255, 255); border: 2px solid gray; color: #222; }
+        section .detail_button:hover { background: rgb(225, 225, 225);  }
+        .famous1:hover > .napoleon_iii_salon { opacity: 1; }
+        .famous2:hover > .louis_XIV_room { opacity: 1; }
+        .famous3:hover > .egyption_hall { opacity: 1; }
+        .famous4:hover > .renaissance_painting_hall { opacity: 1; }
+        .famous5:hover > .french_painting_hall { opacity: 1; }
+        
+        #introduction_space { width: 100%; height: 210px; background-color: lightgray; text-align: center; }
+        #introduction_space .is_subtitle { font-size: 22px; padding-top: 45px; font-family: 'Cormorant Unicase', serif;  }
+        #introduction_space .is_title { font-size: 45px; font-family: 'Cormorant Unicase', serif; }
+
+        #exhibition_space1 { width: 100%; height: 373px; display: flex; font-family: 'Public Sans', sans-serif; }
+        #exhibition_space1 .museum_map { width: 50%; height: 373px; background-image: url(../img/main/Louvre_map.jpg); background-size: cover;
+                                         background-position: center; }
+        #exhibition_space1 .mona_lisa { width: 25%; height: 373px; background-image: url(../img/main/Mona_Lisa.jpg); background-size: cover;
+                                           background-position: top; cursor: pointer; }
+        #exhibition_space1 .explain_space1 { width: 25%; height: 373px; font-size: 20px; text-align: center; padding-top: 50px; }
+        .explain_space1 > b { font-family: 'Fraunces', serif; }
+
+        #exhibition_space2 { width: 100%; height: 375px; display: flex; font-family: 'Public Sans', sans-serif; }                           
+        #exhibition_space2 .sphinx { width: 25%; height: 375px; background-image: url(../img/main/Sphinx.jpg); background-size: cover;
+                                     background-position: center; cursor: pointer; order: 1;}
+        #exhibition_space2 .explain_space2 { width: 25%; height: 375px; order: 0; font-size: 20px; text-align: center; padding-top: 50px; }
+        #exhibition_space2 .the_Venus { width: 25%; height: 375px; background-image: url(../img/main/the_Venus.jpg); background-size: cover;
+                                        background-position: top; cursor: pointer; order: 3;}
+
+        #exhibition_space2 .explain_space3 { width: 25%; height: 375px; order: 2; font-size: 20px; text-align: center; padding-top: 50px; }
+        .explain_space2 > b , .explain_space3 > b { font-family: 'Fraunces', serif; }
+
+
+        #exhibition_space3 { width: 100%; height: 375px; display: flex; font-family: 'Public Sans', sans-serif; }
+        #exhibition_space3 .Horse_man { width: 25%; height: 375px; background-image: url(../img/main/Horseman.jpg); background-size: cover;
+                                        background-position: center; cursor: pointer; }
+        #exhibition_space3 .explain_space4 { width: 25%; height: 375px; font-size: 20px; text-align: center; padding-top: 50px; }
+        #exhibition_space3 .Delacroix { width: 25%; height: 375px; background-image: url(../img/main/Delacroix.jpg); background-size: cover;
+                                        background-position: center; cursor: pointer; }
+        #exhibition_space3 .explain_space5 { width: 25%; height: 375px; font-size: 20px; text-align: center; padding-top: 50px; }
+        .explain_space4 > b , .explain_space5 > b { font-family: 'Fraunces', serif; }
+
+        .detail_button2 { width: 175px; height: 50px; cursor: pointer; background: rgb(255, 255, 255); border: 2px solid gray; 
+                         font-family: 'Bree Serif', serif; margin-top: 50px; color: #222; }
+        .detail_button2:hover { background: rgb(225, 225, 255); }
+
+        .mona_lisa, .explain_space1 { transition: all 0.75s ease ; }
+        .mona_lisa:hover + .explain_space1 { cursor: pointer; background-color: #ffc107; }
+
+        .sphinx, .explain_space2 { transition: all 0.75s ease ; }
+        .sphinx:hover + .explain_space2 { cursor: pointer; background-color: #ffc107; }
+
+        .the_Venus, .explain_space3 { transition: all 0.75s ease ; }
+        .the_Venus:hover + .explain_space3  { cursor: pointer; background-color: #ffc107; }
+
+        .Horse_man, .explain_space4 { transition: all 0.75s ease ; }
+        .Horse_man:hover + .explain_space4 { cursor: pointer; background-color: #ffc107; }
+
+        .Delacroix, .explain_space5 { transition: all 0.75s ease ; }
+        .Delacroix:hover + .explain_space5 { cursor: pointer; background-color: #ffc107; }
+
+        .explain_space1:hover, .explain_space2:hover, .explain_space3:hover, .explain_space4:hover, .explain_space5:hover {  background-color: rgb(255,220,60); }
+
+        #event_space { width: 100%; height: 783px; position: relative; background-color: rgba(5, 5, 5, 0.85); }
+        #event_space h3 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-top: 70px; }
+        #event_space h1 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-bottom: 50px; }
+
+        #rotating_banner_wrap { width: 850px; height: 600px; margin: auto; position: relative; overflow: hidden;
+                                             cursor: pointer; transition: all 1s ease; background: rgba(25, 25, 25, 0.8); }
+        .slide { width: 2700px; height: 100%; }
+        .slide li { width: 400px; height: 600px; float: left; }
+        .siide li img { width: 400px; }
+        .left { position: absolute; top: 50%; left: 25%; display: block; font-size: 25px; color:#fff; line-height: 45px;
+                             cursor: pointer;  height: 50px; transform: translate(-50%); background: rgb(80, 194, 255); border-radius: 35px; }
+        .right { position: absolute; top: 50%; right: 24%; display: block; font-size: 25px; color:#fff; line-height: 45px;
+                             cursor: pointer;  height: 50px; transform: translate(-50%); background: rgb(80, 194, 255); border-radius: 35px; }
+        .left:hover { background: rgba(80, 194, 255, 0.75); color: #444; }
+        .right:hover { background: rgba(80, 194, 255, 0.75); color: #444; }
+
+        #rotating_banner_wrap .banner_wrap { width: 100%; height: 100%; transition: all 1s ease; }
+        #rotating_banner_wrap .banners { transition: all 1s ease; }
+        #rotating_banner_wrap .banner_wrap > img:hover { opacity: 0.75; }
+
+        #event_space .rotating_banner { margin-right: 50px; }
+
+        #video_title { width: 100%; height: 150px; text-align: center; background-color: lightgray; font-size: 25px; }
+        #video_title > h1 { padding-top: 50px; font-family: 'Cormorant Unicase', serif; }
+        #video_space { width: 100%; height: 800px; overflow: hidden; position: relative;}
+        #video_space video { width: 100%; height: auto; position: absolute; top: 50%; transform: translateY(-50%);}
+
+        #Tour_guide_explain { width: 1500px; height: 825px; margin: 0 auto; background-image: url(../img/main/tourguide_background.jpg);
+                              background-position: center; background-size: cover; }
+        #Tour_guide_explain > h3 { color: #fff; text-align: center; padding-top: 50px; font-family: 'Cormorant Unicase', serif; font-size: 25px; }
+        #Tour_guide_explain > h1 { color: #fff; text-align: center; padding-bottom: 50px; font-family: 'Cormorant Unicase', serif; font-size: 45px; }
+
+        #Tour_guide_explain .tour_guides { float: left; }
+
+        #Tour_guide_explain .tour_guide_container { width: 100%; height: 600px; display: flex; flex-wrap: wrap; justify-content: center; font-family: 'Public Sans', sans-serif; }
+        #Tour_guide_explain .tour_guide_box { width: 35%; height: 125px; background-color: #fff; margin-left: 25px; border-radius: 20px;
+                                              box-shadow: 5px 5px 5px rgba(25, 25, 25, 0.65); }
+        .tour_guide_box h3 { color: #333; display: inline-block; text-align: center; font-family: 'Fraunces', serif; }
+        .tour_guide_box .tour_guides { vertical-align: top; }
+
+        #souvenir_space { width: 1500px; margin: 0 auto; height: 650px; background-color: rgb(225, 225, 225); position: relative; }
+        #souvenir_space h3 { text-align: center; padding-top: 50px; font-family: 'Cormorant Unicase', serif; font-size: 25px; }
+        #souvenir_space h1 { text-align: center; padding-bottom: 55px; padding-bottom: 25px; font-family: 'Cormorant Unicase', serif; font-size: 40px; }
+
+        #souvenir_space .souvenir_container { width: 100%; height: 70%; position: relative; display: flex; justify-content: center; flex-wrap: wrap; font-family: 'Fraunces', serif; margin-top: 30px; }
+
+        .souvenir_container .souvenir_bigbox1 { width: 500px; min-height: 400px; position: relative; height: auto; background: #0b0b0b; }
+        .souvenir_container .souvenir_bigbox2 { width: 500px; min-height: 400px; position: relative; height: auto; background: #fefefe; }
+        .souvenir_container .souvenir_bigbox3 { width: 500px; min-height: 400px; position: relative; height: auto; background: #f7f8fc; }
+        
+        
+        #souvenir_space .souvenir_box1 { background: url(../img/main/museum_souvenir1.png); width: 100%; min-height: 90%;
+                                         height: auto; position: absolute; top: 0; z-index: 0; background-repeat: no-repeat; background-position: center; }
+        #souvenir_space .souvenir_box2 { background: url(../img/main/museum_souvenir2.png); width: 100%; min-height: 88.8%; 
+                                         height: auto; position: absolute; top: 0; z-index: 0; background-repeat: no-repeat;  background-position: center; }
+        #souvenir_space .souvenir_box3 { background: url(../img/main/museum_souvenir3.png); width: 100%; min-height: 94.5%; 
+                                         height: auto;  position: absolute; top: 0; z-index: 0; background-repeat: no-repeat;  background-position: center; }
+        #souvenir_space .guide_information { display: inline-block; }
+        #souvenir_space .product_name1 { color: #fff; text-align: center; }
+        #souvenir_space .product_name2 { text-align: center; }
+
+        #sns_space { width: 100%; height: 650px; position: relative; }
+        #sns_space h3 { text-align: center; padding-top: 65px; font-family: 'Cormorant Unicase', serif; font-size: 22px; }
+        #sns_space h1 { text-align: center; padding-bottom: 50px; font-family: 'Cormorant Unicase', serif; font-size: 35px; }
+
+        .sns_image1, .sns_image2, .sns_image3, .sns_image4, .sns_image5 { width: 20%; height: 100%; background-size: cover; background-position: center; cursor: pointer; transition: all 1s ease; position: relative; }
+        .sns_image1:hover, .sns_image2:hover, .sns_image3:hover, .sns_image4:hover, .sns_image5:hover { opacity: 0.75; }
+
+        #sns_space .sns_image_container { width: 100%; height: 450px; display: flex; justify-content: center; flex-wrap: wrap; position: relative; font-family: 'Public Sans', sans-serif; color:#fff; }
+        #sns_space .sns_image1 { background-image: url(../img/main/sns_image1.jpg); }
+        #sns_space .sns_image2 { background-image: url(../img/main/sns_image2.jpg); }
+        #sns_space .sns_image3 { background-image: url(../img/main/sns_image3.jpg); }
+        #sns_space .sns_image4 { background-image: url(../img/main/sns_image4.jpg); }
+        #sns_space .sns_image5 { background-image: url(../img/main/sns_image5.jpg); }
+
+        .sns_date1, .sns_date2, .sns_date3, .sns_date4, .sns_date5 { width: 100%; opacity: 0; transition: all 1s ease; position: absolute; top: 50%; left: 75%; transform: translate(-50%, -50%); font-size: 25px; }
+        #sns_space .sns_image1:hover > .sns_date1 { opacity: 1; }
+        #sns_space .sns_image2:hover > .sns_date2 { opacity: 1; }
+        #sns_space .sns_image3:hover > .sns_date3 { opacity: 1; }
+        #sns_space .sns_image4:hover > .sns_date4 { opacity: 1; }
+        #sns_space .sns_image5:hover > .sns_date5 { opacity: 1; }
+
+        #sns_space .insta_icon { vertical-align: middle; }
+
+        
+        .popup_box1, .popup_box2, .popup_box3, .popup_box4, .popup_box5 { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; display: none; background-color: rgba(0, 0, 0, 0.75); }
+        .popup_box1 img, .popup_box2 img, .popup_box3 img, .popup_box4 img, .popup_box5 img  { position:absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); }
