@@ -4,6 +4,7 @@
         ul, ol, li { list-style: none; margin: 0; padding: 0; }
         a { text-decoration: none; }
         header a { color: #fff; }
+        footer a { color: #fff; }
         header a:visited { color: #fff; }
         section a:visited { color: #fff; }
         footer a:visited { color: #fff; }
@@ -22,7 +23,7 @@
         #slider .dot_container { text-align: center; position: absolute; top: 925px; left: 50%; transform: translateX(-50%);}
         
         .slide_images { display: none; width: 100%; vertical-align: middle; }
-        #slider .dot_container .active { background-color: rgb(237, 104, 144); }
+        #slider .dot_container .active { background-color: #ffc107; }
         .fade { animation-name: fade; animation-duration: 1.5s; }
 
         @keyframes fade { 
@@ -54,7 +55,7 @@
         .footer_container .footer_subject { font-weight: bold; font-size: 20px; }
         footer ul { margin-left: 50px; }
         footer ul li { margin-top: 25px; }
-        footer .sns_icons { padding-left: 150px; padding-bottom: 100px; width: 20%;  display: flex; justify-content: space-between;  }
+        footer .sns_icons { padding-left: 150px; padding-top: 150px; width: 20%;  display: flex; justify-content: space-between;  }
         footer .sns_icon_images { padding-left: 30px; }
 
         .footer_container > .logo { color: #fff; font-size: 90px; font-family: 'Cormorant Unicase', serif; }
