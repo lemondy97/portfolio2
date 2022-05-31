@@ -52,7 +52,7 @@
 
         footer { width: 100%; height: 350px; background: rgb(25, 25, 25); color: #fff; font-family: 'Bree Serif', serif; text-align: center; margin-top: -8px; }
         .footer_container { width: 75%; display: flex; justify-content: space-around; align-items: center; padding-left: 160px; padding-top: 50px; }
-        .footer_container .footer_subject { font-weight: bold; font-size: 20px; }
+        .footer_container .footer_subject { font-size: 20px; }
         footer ul { margin-left: 50px; }
         footer ul li { margin-top: 25px; }
         footer .sns_icons { padding-left: 150px; padding-top: 150px; width: 20%;  display: flex; justify-content: space-between;  }
