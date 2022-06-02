@@ -1,19 +1,19 @@
 @charset "utf-8";
 
-@charset "utf-8";
+
 
 
         @media (max-width:599px){
 
-        section { width: 35%; height: 1050px; margin: 0 auto; text-align: center; }
-        section > #louvre_wings { width: 35%; height: 333px; text-align: center; display: flex;
+        section { width: 100vmin; height: 13vh; margin: 0 auto; text-align: center; }
+        section > #louvre_wings { width: 90%; height: 32%; text-align: center; display: flex;
                                 justify-content: center; font-weight: bold; flex-wrap: wrap;
                                 font-size: 20px; position: relative; }
         #louvre_wings .titles { text-align: center; font-size: 23px; font-family: 'Fraunces', serif; color: #fff; }
         #wing_image1, #wing_image2, #wing_image3 { cursor: pointer; transition: all 0.75s ease; background-size: cover; background-position: center; position: relative; }
-        #wing_image1 { width: 100%; background-image: url(../img/main/richelieu_wing1.jpg); }
-        #wing_image2 { width: 100%; background-image: url(../img/main/denon_wing1.jpeg); }
-        #wing_image3 { width: 100%; background-image: url(../img/main/sully_wing1.jpg); }
+        #wing_image1 { width: 90%; background-image: url(../img/main/richelieu_wing1.jpg); }
+        #wing_image2 { width: 90%; background-image: url(../img/main/denon_wing1.jpeg); }
+        #wing_image3 { width: 90%; background-image: url(../img/main/sully_wing1.jpg); }
 
 
         #louvre_wings .click_sign { opacity: 0; font-size: 18px; transition: all 0.4s ease; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
@@ -22,24 +22,24 @@
         #wing_image2:hover > .click_sign { opacity: 1; }
         #wing_image3:hover > .click_sign { opacity: 1; }
 
-        #louvre_wings .bg_shadow1 { background-color: rgba(0, 0, 0, 0.5); width: 100%; opacity: 0; height: 333px; position: absolute; transition: all 1s ease; z-index: 10; top: 0; left: 0; }
+        #louvre_wings .bg_shadow1 { background-color: rgba(0, 0, 0, 0.5); width: 100%; opacity: 0; height: 100%; position: absolute; transition: all 1s ease; z-index: 10; top: 0; left: 0; }
 
         #wing_image1:hover > .bg_shadow1 { opacity: 1; }
         #wing_image2:hover > .bg_shadow1 { opacity: 1; }
         #wing_image3:hover > .bg_shadow1 { opacity: 1; }
 
 
-        section .welcome { font-size: 22px; font-family: 'Cormorant Unicase', serif; margin-top: 105px; }
-        section .section_subject { font-size: 45px; font-family: 'Cormorant Unicase', serif; padding-bottom: 115px; }
-        section .famous_room { width: 35%; height: 300px; display: flex; flex-wrap: wrap; justify-content: center; position: relative; }
-        .famous1, .famous2, .famous3, .famous4, .famous5 { width: 100%; background-size: cover; background-position: center; cursor: pointer; transition: all 1s ease; position: relative; }
+        section .welcome { font-size: 22px; font-family: 'Cormorant Unicase', serif; margin-top: 10%; }
+        section .section_subject { font-size: 45px; font-family: 'Cormorant Unicase', serif; padding-bottom: 10%; }
+        section .famous_room { width: 100vmin; height: 29vh; display: flex; flex-wrap: wrap; justify-content: center; position: relative; }
+        .famous1, .famous2, .famous3, .famous4, .famous5 { width: 90%; background-size: cover; background-position: center; cursor: pointer; transition: all 1s ease; position: relative; }
         section .famous1 { background-image: url(../img/main/Napoleon_III_salon.jpg); }
         section .famous2 { background-image: url(../img/main/Louis_XIV_room.jpg); }
         section .famous3 { background-image: url(../img/main/epyption_hall.jpg); }
         section .famous4 { background-image: url(../img/main/renaissance_painting.jpg); }
         section .famous5 { background-image: url(../img/main/french_painting.jpg); }
 
-        .napoleon_iii_salon, .louis_XIV_room, .egyption_hall, .renaissance_painting_hall, .french_painting_hall { width: 100%; opacity: 0; transition: all 0.5s ease; position: absolute; top: 50%; left: 50%; 
+        .napoleon_iii_salon, .louis_XIV_room, .egyption_hall, .renaissance_painting_hall, .french_painting_hall { width: 100vmin; opacity: 0; transition: all 0.5s ease; position: absolute; top: 50%; left: 50%; 
                                                                                                                   transform: translate(-50%, -50%); font-weight: bold; 
                                                                                                                   font-size: 22px; color: #fff; font-family: 'Public Sans', sans-serif; z-index: 15; }
 
@@ -52,7 +52,7 @@
         .famous4:hover > .renaissance_painting_hall { opacity: 1; }
         .famous5:hover > .french_painting_hall { opacity: 1; }
 
-        .famous_room .bg_shadow2 { background-color: rgba(0, 0, 0, 0.5); width: 100%; opacity: 0; height: 300px; position: absolute; transition: all 1s ease; z-index: 10; top: 0; left: 0; }
+        .famous_room .bg_shadow2 { background-color: rgba(0, 0, 0, 0.5); width: 100%; opacity: 0; height: 100%; position: absolute; transition: all 1s ease; z-index: 10; top: 0; left: 0; }
 
         .famous1:hover > .bg_shadow2 { opacity: 1; }
         .famous2:hover > .bg_shadow2 { opacity: 1; }
@@ -60,41 +60,41 @@
         .famous4:hover > .bg_shadow2 { opacity: 1; }
         .famous5:hover > .bg_shadow2 { opacity: 1; }
         
-        #introduction_space { width: 100%; height: 325px; background-color: lightgray; text-align: center; }
-        #introduction_space .is_subtitle { font-size: 25px; padding-top: 115px; font-family: 'Cormorant Unicase', serif; }
+        #introduction_space { width: 100vmin; height: 4vh; background-color: lightgray; text-align: center; }
+        #introduction_space .is_subtitle { font-size: 25px; padding-top: 35%; font-family: 'Cormorant Unicase', serif; }
         #introduction_space .is_title { font-size: 50px; font-family: 'Cormorant Unicase', serif; }
 
-        #exhibition_space1 { width: 100%; height: 373px; display: flex; font-family: 'Public Sans', sans-serif; }
-        #exhibition_space1 .museum_map { width: 50%; height: 373px; background-image: url(../img/main/Louvre_museum_1867.jpg); background-size: cover;
+        #exhibition_space1 { width: 100vmin; height: 4.5vh; display: flex; flex-wrap: wrap; font-family: 'Public Sans', sans-serif; }
+        #exhibition_space1 .museum_map { width: 100%; height: 100%; background-image: url(../img/main/Louvre_museum_1867.jpg); background-size: cover;
                                          background-position: center; position: relative; }
         .museum_map h2 { color: #666; text-align: center; font-size: 33px; font-family: 'Cormorant Unicase', serif; padding-top: 50px; }
-        #exhibition_space1 .mona_lisa { width: 25%; height: 373px; background-image: url(../img/main/Mona_Lisa.jpg); background-size: cover;
+        #exhibition_space1 .mona_lisa { width: 50%; height: 100%; background-image: url(../img/main/Mona_Lisa.jpg); background-size: cover;
                                            background-position: top; cursor: pointer; }
-        #exhibition_space1 .explain_space1 { width: 25%; height: 373px; font-size: 20px; text-align: center; padding-top: 50px; }
+        #exhibition_space1 .explain_space1 { width: 50%; height: 100%; font-size: 20px; text-align: center; padding-top: 50px; }
         .explain_space1 > b { font-family: 'Fraunces', serif; }
 
-        #exhibition_space2 { width: 100%; height: 375px; display: flex; font-family: 'Public Sans', sans-serif; }                           
-        #exhibition_space2 .sphinx { width: 25%; height: 375px; background-image: url(../img/main/Sphinx.jpg); background-size: cover;
+        #exhibition_space2 { width: 100vmin; height: 4.5vh; display: flex; flex-wrap: wrap; font-family: 'Public Sans', sans-serif; }                           
+        #exhibition_space2 .sphinx { width: 50%; height: 100%; background-image: url(../img/main/Sphinx.jpg); background-size: cover;
                                      background-position: center; cursor: pointer; order: 1;}
-        #exhibition_space2 .explain_space2 { width: 25%; height: 375px; order: 0; font-size: 20px; text-align: center; padding-top: 50px; }
-        #exhibition_space2 .the_Venus { width: 25%; height: 375px; background-image: url(../img/main/the_Venus.jpg); background-size: cover;
+        #exhibition_space2 .explain_space2 { width: 50%; height: 100%; order: 0; font-size: 20px; text-align: center; padding-top: 50px; }
+        #exhibition_space2 .the_Venus { width: 50%; height: 100%; background-image: url(../img/main/the_Venus.jpg); background-size: cover;
                                         background-position: top; cursor: pointer; order: 3;}
 
-        #exhibition_space2 .explain_space3 { width: 25%; height: 375px; order: 2; font-size: 20px; text-align: center; padding-top: 50px; }
+        #exhibition_space2 .explain_space3 { width: 50%; height: 100%; order: 2; font-size: 20px; text-align: center; padding-top: 50px; }
         .explain_space2 > b , .explain_space3 > b { font-family: 'Fraunces', serif; }
 
 
-        #exhibition_space3 { width: 100%; height: 375px; display: flex; font-family: 'Public Sans', sans-serif; }
-        #exhibition_space3 .Horse_man { width: 25%; height: 375px; background-image: url(../img/main/Horseman.jpg); background-size: cover;
+        #exhibition_space3 { width: 100vmin; height: 4.5vh; display: flex; flex-wrap: wrap; font-family: 'Public Sans', sans-serif; }
+        #exhibition_space3 .Horse_man { width: 50%; height: 100%; background-image: url(../img/main/Horseman.jpg); background-size: cover;
                                         background-position: center; cursor: pointer; }
-        #exhibition_space3 .explain_space4 { width: 25%; height: 375px; font-size: 20px; text-align: center; padding-top: 50px; }
-        #exhibition_space3 .Delacroix { width: 25%; height: 375px; background-image: url(../img/main/Delacroix.jpg); background-size: cover;
+        #exhibition_space3 .explain_space4 { width: 50%; height: 100%; font-size: 20px; text-align: center; padding-top: 50px; }
+        #exhibition_space3 .Delacroix { width: 50%; height: 100%; background-image: url(../img/main/Delacroix.jpg); background-size: cover;
                                         background-position: center; cursor: pointer; }
-        #exhibition_space3 .explain_space5 { width: 25%; height: 375px; font-size: 20px; text-align: center; padding-top: 50px; }
+        #exhibition_space3 .explain_space5 { width: 50%; height: 100%; font-size: 20px; text-align: center; padding-top: 50px; }
         .explain_space4 > b , .explain_space5 > b { font-family: 'Fraunces', serif; }
 
-        .detail_button2 { width: 175px; height: 50px; cursor: pointer; background: rgb(255, 255, 255); border: 2px solid gray; 
-                         font-family: 'Bree Serif', serif; margin-top: 40px; color: #222; }
+        .detail_button2 { width: 9%; height: 13%; cursor: pointer; background: rgb(255, 255, 255); border: 2px solid gray; 
+                         font-family: 'Bree Serif', serif; margin-top: 23%; color: #222; }
         .detail_button2:hover { background: rgb(225, 225, 255); }
 
         .mona_lisa, .explain_space1 { transition: all 0.5s ease ; }
@@ -114,15 +114,15 @@
 
         .explain_space1:hover, .explain_space2:hover, .explain_space3:hover, .explain_space4:hover, .explain_space5:hover {  background-color: #d1a522; }
 
-        #event_space { width: 100%; height: 881px; position: relative; background-color: rgba(5, 5, 5, 0.85); }
+        #event_space { width: 100vmin; height: 11vh; position: relative; background-color: rgba(5, 5, 5, 0.85); }
         #event_space h3 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-top: 90px; font-size: 25px; }
         #event_space h1 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-bottom: 90px; font-size: 35px; }
 
-        #rotating_banner_wrap { width: 850px; height: 600px; margin: auto; position: relative; overflow: hidden;
+        #rotating_banner_wrap { width: 44%; height: 68%; margin: auto; position: relative; overflow: hidden;
                                              cursor: pointer; transition: all 1s ease; background: rgba(25, 25, 25, 0.8); }
-        .slide { width: 2700px; height: 100%; }
-        .slide li { width: 400px; height: 600px; float: left; }
-        .siide li img { width: 400px; }
+        .slide { width: 141%; height: 100%; }
+        .slide li { width: 21%; height: 100%; float: left; }
+        .siide li img { width: 21%; }
         .left { position: absolute; top: 62%; left: 25%; display: block; font-size: 25px; color: #fff; line-height: 45px;
                              cursor: pointer;  height: 50px; transform: translate(-50%); background: rgb(240, 230, 140); border-radius: 35px; }
         .right { position: absolute; top: 62%; right: 24%; display: block; font-size: 25px; color: #fff; line-height: 45px;
@@ -136,33 +136,33 @@
 
         #event_space .rotating_banner { margin-right: 50px; }
 
-        #video_title { width: 100%; height: 250px; text-align: center; background-color: lightgray; font-size: 25px; }
+        #video_title { width: 100vmin; height: 3vh; text-align: center; background-color: lightgray; font-size: 25px; }
         #video_title > h1 { padding-top: 100px; font-family: 'Cormorant Unicase', serif; }
-        #video_space { width: 100%; height: 800px; overflow: hidden; position: relative;}
+        #video_space { width: 100vmin; height: 10vh; overflow: hidden; position: relative;}
         #video_space video { width: 100%; height: auto; position: absolute; top: 50%; transform: translateY(-50%);}
 
-        #Tour_guide_explain { width: 1500px; height: 1000px; margin: 0 auto; background-image: url(../img/main/tourguide_background.jpg);
+        #Tour_guide_explain { width: 78vmin; height: 12vh; margin: 0 auto; background-image: url(../img/main/tourguide_background.jpg);
                               background-position: center; background-size: cover; }
-        #Tour_guide_explain > h3 { color: #fff; text-align: center; padding-top: 125px; font-family: 'Cormorant Unicase', serif; font-size: 25px; }
-        #Tour_guide_explain > h1 { color: #fff; text-align: center; padding-bottom: 125px; font-family: 'Cormorant Unicase', serif; font-size: 45px; }
+        #Tour_guide_explain > h3 { color: #fff; text-align: center; padding-top: 12%; font-family: 'Cormorant Unicase', serif; font-size: 25px; }
+        #Tour_guide_explain > h1 { color: #fff; text-align: center; padding-bottom: 12%; font-family: 'Cormorant Unicase', serif; font-size: 45px; }
 
         #Tour_guide_explain .tour_guides { float: left; }
 
-        #Tour_guide_explain .tour_guide_container { width: 100%; height: 600px; display: flex; flex-wrap: wrap; justify-content: center; font-family: 'Public Sans', sans-serif; }
-        #Tour_guide_explain .tour_guide_box { width: 35%; height: 125px; background-color: #fff; margin-left: 25px; border-radius: 20px;
+        #Tour_guide_explain .tour_guide_container { width: 100%; height: 60%; display: flex; flex-wrap: wrap; justify-content: center; font-family: 'Public Sans', sans-serif; }
+        #Tour_guide_explain .tour_guide_box { width: 65%; height: 20%; background-color: #fff; margin-left: 25px; border-radius: 20px;
                                               box-shadow: 5px 5px 5px rgba(25, 25, 25, 0.65); }
         .tour_guide_box h3 { color: #333; display: inline-block; text-align: center; font-family: 'Fraunces', serif; }
         .tour_guide_box .tour_guides { vertical-align: top; }
 
-        #souvenir_space { width: 1500px; margin: 0 auto; height: 650px; background-color: rgb(225, 225, 225); position: relative; }
+        #souvenir_space { width: 78vmin; margin: 0 auto; height: 8vh; background-color: rgb(225, 225, 225); position: relative; }
         #souvenir_space h3 { text-align: center; padding-top: 50px; font-family: 'Cormorant Unicase', serif; font-size: 25px; }
         #souvenir_space h1 { text-align: center; padding-bottom: 55px; padding-bottom: 25px; font-family: 'Cormorant Unicase', serif; font-size: 40px; }
 
-        #souvenir_space .souvenir_container { width: 100%; height: 70%; position: relative; display: flex; justify-content: center; flex-wrap: wrap; font-family: 'Fraunces', serif; margin-top: 30px; }
+        #souvenir_space .souvenir_container { width: 100%; height: 70vh; position: relative; display: flex; flex-wrap: wrap; justify-content: center; flex-wrap: wrap; font-family: 'Fraunces', serif; margin-top: 30px; }
 
-        .souvenir_container .souvenir_bigbox1 { width: 500px; min-height: 400px; position: relative; height: auto; background: #0b0b0b; }
-        .souvenir_container .souvenir_bigbox2 { width: 500px; min-height: 400px; position: relative; height: auto; background: #fefefe; }
-        .souvenir_container .souvenir_bigbox3 { width: 500px; min-height: 400px; position: relative; height: auto; background: #f7f8fc; }
+        .souvenir_container .souvenir_bigbox1 { width: 100%; min-height: 88%; position: relative; height: auto; background: #0b0b0b; }
+        .souvenir_container .souvenir_bigbox2 { width: 100%; min-height: 88%; position: relative; height: auto; background: #fefefe; }
+        .souvenir_container .souvenir_bigbox3 { width: 100%; min-height: 88%; position: relative; height: auto; background: #f7f8fc; }
         
         
         #souvenir_space .souvenir_box1 { background: url(../img/main/museum_souvenir1.png); width: 100%; min-height: 90%;
@@ -175,15 +175,15 @@
         #souvenir_space .product_name1 { color: #fff; text-align: center; }
         #souvenir_space .product_name2 { text-align: center; }
 
-        #sns_space { width: 100%; height: 800px; position: relative; }
+        #sns_space { width: 100vmin; height: 10vh; position: relative; }
         #sns_space h3 { text-align: center; padding-top: 140px; font-family: 'Cormorant Unicase', serif; font-size: 22px; }
         #sns_space h1 { text-align: center; padding-bottom: 125px; font-family: 'Cormorant Unicase', serif; font-size: 40px; }
 
 
-        .sns_image1, .sns_image2, .sns_image3, .sns_image4, .sns_image5 { width: 20%; height: 100%; background-size: cover; background-position: center; cursor: pointer; transition: all 1s ease; position: relative; }
+        .sns_image1, .sns_image2, .sns_image3, .sns_image4, .sns_image5 { width: 80%; height: 100%; background-size: cover; background-position: center; cursor: pointer; transition: all 1s ease; position: relative; }
 
 
-        #sns_space .sns_image_container { width: 100%; height: 450px; display: flex; justify-content: center; flex-wrap: wrap; position: relative; font-family: 'Public Sans', sans-serif; color:#fff; }
+        #sns_space .sns_image_container { width: 100%; height: 56%; display: flex; justify-content: center; flex-wrap: wrap; position: relative; font-family: 'Public Sans', sans-serif; color:#fff; }
         #sns_space .sns_image1 { background-image: url(../img/main/sns_image1.jpg); }
         #sns_space .sns_image2 { background-image: url(../img/main/sns_image2.jpg); }
         #sns_space .sns_image3 { background-image: url(../img/main/sns_image3.jpg); }
@@ -197,7 +197,7 @@
         #sns_space .sns_image4:hover > .sns_date4 { opacity: 1; }
         #sns_space .sns_image5:hover > .sns_date5 { opacity: 1; }
 
-        .sns_image_container .bg_shadow3 { background-color: rgba(0, 0, 0, 0.5); width: 100%; opacity: 0; height: 450px; position: absolute; transition: all 1s ease; z-index: 10; top: 0; left: 0; }
+        .sns_image_container .bg_shadow3 { background-color: rgba(0, 0, 0, 0.5); width: 100%; opacity: 0; height: 100%; position: absolute; transition: all 1s ease; z-index: 10; top: 0; left: 0; }
 
         .sns_image1:hover > .bg_shadow3 { opacity: 1; }
         .sns_image2:hover > .bg_shadow3 { opacity: 1; }
