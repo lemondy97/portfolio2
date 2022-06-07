@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louvre Museum/Membership</title>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Public+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; }
+        section { width: 100%; height: 3000px; background-image: url(img/sub/sub_main.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; }
+        #membership_explain { width: 100%; height: 1000px; }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="slider">
+            <div class="main_rotating_image">
+                <div class="slide_images fade">
+                    <img src="img/main/Louvre_slider1.jpg" alt="메인 이미지" class="slider_main_image">
+                </div>
+                <div class="slide_images fade">
+                    <img src="img/main/Louvre_slider2.jpg" alt="메인 이미지" class="slider_main_image">
+                </div>
+                <div class="slide_images fade">
+                    <img src="img/main/Louvre_slider3.jpg" alt="메인 이미지" class="slider_main_image">
+                </div>
+                
+
+                <div class="dot_container">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <script src="js/Slider.js"></script>
+
+
+            <header>
+                <h1 class="main_subject"><a href="#">Louvre</a></h1>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="#">Visit</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Support Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="reservation_space">
+                <div class="blank_space"></div>
+                <div class="rv_menu">                        
+                    <div class="rv_box">
+                        <h2>Select date</h2>
+                        <input type="date" value="2022-05-01">
+                        <input type="submit" value="submit">
+                    </div>
+                    <div class="rv_box">
+                        <h2>Select Time</h2>
+                        <input type="time" value="09:00" min="09:00" max="18:00" step="1800">
+                        <input type="submit" value="submit">
+                    </div>
+                    <div class="rv_box">
+                        <h2>Sign up audio guide book</h2>
+                        <select name="Audio_book">
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="russian">Russian</option>
+                            <option value="chinese">Chinese</option>
+                            <option value="korean">Korean</option>
+                        </select>
+                        <input type="submit" value="submit">
+                    </div>
+                    <div class="rv_payment">
+                        <p>payment</p><br>
+                        <p class="announcement">All tickets purchased online are 
+                            time-stamped and nominative; you may therefore be asked
+                            to provide proof of identity.</p>
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <section>
+            <div id="membership_explain">
+                12345
+            </div>
+        </section>
+
+    <footer>
+
+        <div class="footer_container">
+            <h1 class="logo"><a href="#">Louvre</a></h1>
+            <ul>
+                <li class="footer_subject"><a href="#">The public establishment</a></li>
+                <li><a href="#">Visit rules</a></li>
+                <li><a href="#">Loans and deposits</a></li>
+                <li><a href="#">Public procurement and state occupation</a></li>
+                <li><a href="#">Administrative acts</a></li>
+            </ul>
+
+            <ul>
+                <li class="footer_subject"><a href="#">Ticket office</a></li>
+                <li><a href="#">online shop</a></li>
+                <li><a href="#">collections</a></li>
+                <li><a href="#">online donation</a></li>
+                <li><a href="#">Editions</a></li>
+            </ul>
+
+            <ul>
+                <li class="footer_subject"><a href="#">FAQ</a></li>
+                <li><a href="#">contacts</a></li>
+                <li><a href="#">Give us your opinion!</a></li>
+                <li><a href="#">Job offers</a></li>
+                <li><a href="#">Privatizations and filming</a></li>
+            </ul>
+
+            <div class="sns_icons">
+                <a href="#"><img src="img/main/instagram_icon.png" alt="인스타그램 아이콘" class="sns_icon_images"></a>
+                <a href="#"><img src="img/main/facebook_icon.png" alt="페이스북 아이콘" class="sns_icon_images"></a>
+                <a href="#"><img src="img/main/twitter_icon.png" alt="트위터 아이콘" class="sns_icon_images"></a>
+                <a href="#"><img src="img/main/youtube_icon.png" alt="유튜브 아이콘" class="sns_icon_images"></a>
+                <a href="#"><img src="img/main/pinterest_icon.png" alt="핀터레스트 아이콘" class="sns_icon_images"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+
+
+</div>
+</body>
+</html>

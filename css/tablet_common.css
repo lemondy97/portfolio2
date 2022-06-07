@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+
+        @media (min-width:600px) and (max-width:1199px){
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        ul, ol, li { list-style: none; margin: 0; padding: 0; }
+        a { text-decoration: none; }
+        header a { color: #fff; }
+        footer a { color: #fff; }
+        header a:visited { color: #fff; }
+        section a:visited { color: #fff; }
+        footer a:visited { color: #fff; }
+
+        #wrap { width: 100%; height: auto; margin: 0 auto; position: relative; overflow-x: hidden; }
+        header { width: 100%; height: 200px; margin: 0 auto; color: #fff; position: absolute; z-index: 6; top: 0; left: 0; right: 0; }
+        header .main_subject { width: 300px; height: 100px; font-size: 120px; float: left; font-family: 'Cormorant Unicase', serif;
+                               padding-top: 5%; margin-left: 15%; }
+        header #menu { width: 500px; display: flex; justify-content: space-between; float: left; font-family: 'Fraunces', serif;
+                       padding-top: 13%; margin-left: 8%; font-size: 20px; }
+
+        #slider { width: 100%; height: 1000px; margin: 0 auto; text-align: center; }
+        #slider .main_rotating_image { max-width: 100%; position: relative; margin: auto; height: 1000px; background-attachment: fixed; }
+        #slider .dot { width: 25px; height: 25px; margin: 0 2px; background-color: #F6F6F6; border-radius: 50%; 
+                       display: inline-block; transition: background-color 0.6s ease;  }
+        #slider .dot_container { text-align: center; position: absolute; top: 925px; left: 50%; transform: translateX(-50%);}
+        
+        .slide_images { display: none; width: 100%; vertical-align: middle; }
+        #slider .dot_container .active { background-color: #ffc107; }
+        .fade { animation-name: fade; animation-duration: 1.5s; }
+
+        @keyframes fade { 
+            from { opacity: 0.4; } to { opacity: 1; }
+         }
+
+
+
+
+        #slider .blank_space { width: 10%; height: 150px; float: left;  }
+        #slider #reservation_space { width: 80%; height: 150px; position: absolute; top: 720px; 
+                                     left: 0; background: rgba(182, 145, 0, 0.8); color: #333; }
+        #slider .rv_menu { width: 90%; height: 100%; display: flex; justify-content: center; align-items: center; font-family: 'Fraunces', serif; }
+        #slider .rv_box { width: 35%; height: 80%; margin-left: 25px; background-color: white; font-family: 'Fraunces', serif; }
+        #slider .rv_payment { width: 40%; height: 150px; background-color: #222; margin-left: 25px; color: #fff; font-family: 'Fraunces', serif; }
+        .rv_payment button { width: 60%; height: 25%; background: rgb(210, 210, 210); cursor: pointer; font-family: 'Bree Serif', serif; }
+        .rv_payment button:hover { background: rgb(185, 185, 210); }
+        #reservation_space select { font-family: 'Public Sans', sans-serif; }
+
+
+        input[type=date], input[type=time] { width: 110px; height: 30px; background: rgb(216, 245, 255); border: 1px solid silver; margin-top: 5%; cursor: pointer; font-family: 'Public Sans', sans-serif; }
+        input[type=submit] { width: 55px; height: 30px; border: 1px solid silver; background: rgb(240, 230, 140); cursor: pointer; font-family: 'Public Sans', sans-serif; }
+        input:hover[type=submit] { background: rgb(215, 205, 140); }
+        #slider .announcement { color: #fff; font-size: 12px; font-family: 'Public Sans', sans-serif; }
+
+
+        footer { width: 100%; height: 350px; background: rgb(25, 25, 25); color: #fff; font-family: 'Bree Serif', serif; text-align: center; margin-top: -8px; }
+        .footer_container { width: 75%; display: flex; justify-content: space-around; align-items: center; padding-left: 160px; padding-top: 50px; }
+        .footer_container .footer_subject { font-size: 20px; }
+        footer ul { margin-left: 50px; }
+        footer ul li { margin-top: 25px; }
+        footer .sns_icons { padding-left: 150px; padding-top: 150px; width: 20%;  display: flex; justify-content: space-between;  }
+        footer .sns_icon_images { padding-left: 30px; }
+
+        .footer_container > .logo { color: #fff; font-size: 90px; font-family: 'Cormorant Unicase', serif; }
+
+        }
