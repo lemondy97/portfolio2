@@ -20,9 +20,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Public+Sans&display=swap" rel="stylesheet">
 
     <style>
-        * { box-sizing: border-box; }
-        section { width: 100%; height: 3000px; background-image: url(img/sub/sub_main.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; }
-        #membership_explain { width: 100%; height: 1000px; }
+        section { width: 100%; height: 4000px; background-image: url(img/sub/sub_main.jpg); background-position: center; background-attachment: fixed; 
+                  background-repeat: no-repeat; background-size: cover;}
+        #blank_space { width: 100%; height: 650px; position: relative; }
+        #blank_space h1 { color: #fff; font-size: 70px; font-family: 'Fraunces', serif; position: absolute; top: 75%; left: 10%; text-shadow: 3px 3px 3px #555; }
+        #white_space1 { width: 100%; height: 2000px; background-color: white; font-family: 'Public Sans', sans-serif; }
+        #white_space1 h1:nth-of-type(1) { font-size: 30px; padding-top: 50px; }
+        #white_space1 h1:nth-of-type(2) { font-size: 45px; padding-top: 60px; }
+        #white_space1 b { text-decoration: underline; }
+        
+        #membership_explain { width: 1320px; height: 2000px; margin: 0 auto; }
+        #membership_explain a:visited { color: #333; }
+        #membership_explain img { vertical-align: center; }
+        #membership_explain .small_subject { color: #333; font-size: 20px; font-weight: 500; float: left; padding-top: 50px; cursor: pointer; }
+        #membership_explain .share_sns { color: #333; font-size: 20px; font-weight: 500; float: right; padding-top: 50px; }
+        #membership_explain .bottom_line1 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray; padding-top: 100px; }
+        #membership_explain p:nth-of-type(3) { font-size: 19px; padding-top: 50px; }
+        #membership_explain p:nth-of-type(4) { font-size: 19px; padding-top: 50px; }
+        #membership_explain p:nth-of-type(5) { font-size: 19px; padding-top: 50px; }
+        #membership_explain ul { padding-top: 50px; font-size: 19px; }
+        #membership_explain ul li { list-style: circle; }
+        #membership_explain .bottom_line2 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray; padding-top: 50px; }
     </style>
 </head>
 <body>
@@ -30,13 +48,13 @@
         <div id="slider">
             <div class="main_rotating_image">
                 <div class="slide_images fade">
-                    <img src="img/main/Louvre_slider1.jpg" alt="메인 이미지" class="slider_main_image">
+                    <a href="#"><img src="img/main/Louvre_slider1.jpg" alt="메인 이미지" class="slider_main_image"></a>
                 </div>
                 <div class="slide_images fade">
-                    <img src="img/main/Louvre_slider2.jpg" alt="메인 이미지" class="slider_main_image">
+                    <a href="#"><img src="img/main/Louvre_slider2.jpg" alt="메인 이미지" class="slider_main_image"></a>
                 </div>
                 <div class="slide_images fade">
-                    <img src="img/main/Louvre_slider3.jpg" alt="메인 이미지" class="slider_main_image">
+                    <a href="#"><img src="img/main/Louvre_slider3.jpg" alt="메인 이미지" class="slider_main_image"></a>
                 </div>
                 
 
@@ -67,7 +85,7 @@
                 <div class="rv_menu">                        
                     <div class="rv_box">
                         <h2>Select date</h2>
-                        <input type="date" value="2022-05-01">
+                        <input type="date" value="2022-06-01">
                         <input type="submit" value="submit">
                     </div>
                     <div class="rv_box">
@@ -99,10 +117,60 @@
         </div>
     
         <section>
-            <div id="membership_explain">
-                12345
+            <div id="blank_space">
+                <h1>Membership</h1>
+            </div>
+            <div id="white_space1">
+                <div id="membership_explain">
+                    <p class="small_subject"><a href="#">Home</a> &gt; Membership</p>
+                    <p class="share_sns">
+                        share the page
+                        <img src="img/sub/facebook_icon.png" alt="페이스북 아이콘">
+                        <img src="img/sub/instagram_icon.png" alt="인스타그램 아이콘">
+                    </p>
+                    <div class="bottom_line1"></div>
+                    <h1>Become a Member today or purchased the<br>
+                        perfect gift for someone special.
+                    </h1>
+                    <p>
+                        Membership allows you to discover two million years of human history<br>
+                        while donating to the Louvre Museum Friends, enabling us to support<br>
+                        the work of the Museum. From just £75 a year (with discounts for those aged Under 26),<br>
+                        Membership makes visits to the Museum a cultural adventure with:
+                    </p>
+                    <ul>
+                        <li>Free unlimited entry to <b>exhibitions</b>, including The world of Sphinx (until 10 october 2022),<br> 
+                            the Citi exhibition Feminine power: the divine to the demonic<br>
+                           (until 25 December 2022) and a forthcoming show on decoding hieroglyphs.</li>
+                        <li>An exclusive programme of <b>Members' events.</b></li>
+                        <li>Use of an exclusive <b>Members' Room.</b></li>
+                        <li>The Louvre Museum Magazine three times a year.</li>
+                        <li>And many more benefits.</li>
+                    </ul>
+
+                    <p>
+                        Members do not need to book for the permanent collection or our exhibitions.<br>
+                        You'll need to show your Membership card to gain entry. If you're visiting<br>
+                        before your Membership card arrives, on the day of your visit, please bring<br>
+                        the confirmation emails of your Membership purchase to the Membership Desk<br>
+                        in the Great Court. We'll then issue a temporary card to access your on-site benefits.
+                    </p>
+
+                    <p>
+                        Read the Membership FAQs page for any queries about your visit,<br>
+                        or contact us at friends@Louvre museum.github
+                    </p>
+
+                    <div class="bottom_line2"></div>
+                    <h1>Membership benefits</h1>
+
+
+                </div>
+
+                
             </div>
         </section>
+
 
     <footer>
 

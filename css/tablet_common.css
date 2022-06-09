@@ -45,10 +45,11 @@
         .rv_payment button { width: 60%; height: 25%; background: rgb(210, 210, 210); cursor: pointer; font-family: 'Bree Serif', serif; }
         .rv_payment button:hover { background: rgb(185, 185, 210); }
         #reservation_space select { font-family: 'Public Sans', sans-serif; margin-top: 10%; }
+        #reservation_space h2 { font-size: 18px; }
 
 
-        input[type=date], input[type=time] { width: 65%; height: 20%; background: rgb(216, 245, 255); border: 1px solid silver; margin-top: 10%; cursor: pointer; font-family: 'Public Sans', sans-serif; }
-        input[type=submit] { width: 30%; height: 20%; border: 1px solid silver; background: rgb(240, 230, 140); cursor: pointer; font-family: 'Public Sans', sans-serif; }
+        input[type=date], input[type=time] { width: 60%; height: 20%; background: rgb(216, 245, 255); border: 1px solid silver; margin-top: 10%; cursor: pointer; font-family: 'Public Sans', sans-serif; }
+        input[type=submit] { width: 27%; height: 20%; border: 1px solid silver; background: rgb(240, 230, 140); cursor: pointer; font-family: 'Public Sans', sans-serif; }
         input:hover[type=submit] { background: rgb(215, 205, 140); }
         #slider .announcement { color: #fff; font-size: 12px; font-family: 'Public Sans', sans-serif; }
 
