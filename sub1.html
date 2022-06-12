@@ -20,14 +20,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Public+Sans&display=swap" rel="stylesheet">
 
     <style>
-        section { width: 100%; height: 4000px; background-image: url(img/sub/sub_main.jpg); background-position: center; background-attachment: fixed; 
+        section { width: 100%; height: 5000px; background-image: url(img/sub/sub_main.jpg); background-position: center; background-attachment: fixed; 
                   background-repeat: no-repeat; background-size: cover;}
         #blank_space { width: 100%; height: 650px; position: relative; }
         #blank_space h1 { color: #fff; font-size: 70px; font-family: 'Fraunces', serif; position: absolute; top: 75%; left: 10%; text-shadow: 3px 3px 3px #555; }
-        #white_space1 { width: 100%; height: 2000px; background-color: white; font-family: 'Public Sans', sans-serif; }
+        #white_space1 { width: 100%; height: 2500px; background-color: white; font-family: 'Public Sans', sans-serif; }
         #white_space1 h1:nth-of-type(1) { font-size: 30px; padding-top: 50px; float: left; }
         #white_space1 h1:nth-of-type(2) { font-size: 45px; padding-top: 60px; }
         #white_space1 b { text-decoration: underline; }
+        #white_space1 a { color:#333; }
         
         #membership_explain { width: 1320px; height: 2000px; margin: 0 auto; }
         #membership_explain a:visited { color: #333; }
@@ -45,6 +46,34 @@
         #membership_explain ul { padding-top: 50px; font-size: 19px; }
         #membership_explain ul li { list-style: circle; }
         #membership_explain .bottom_line2 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray; padding-top: 50px; }
+        #membership_explain .bottom_line3 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray; padding-top: 75px; }
+
+        #membership_explain #benefit_container1 { width: 100%; margin: 0 auto; display: flex; justify-content: space-between; padding-top: 75px; text-align: center; }
+        #benefit_container1 .benefit_box1 { width: 625px; height: 540px; background: gainsboro; }
+        #membership_explain #benefit_container2 { width: 100%; margin: 0 auto; display: flex; justify-content: space-between; padding-top: 100px; text-align: center; }
+        #benefit_container2 .benefit_box2 { width: 400px; height: 425px; background: gainsboro; }
+        #benefit_container1 h3 { padding-top: 20px; font-size: 22px; }
+        #benefit_container1 p { padding-top: 15px; font-size: 18px; }
+        #benefit_container2 h3 { padding-top: 15px; font-size: 22px; }
+        #benefit_container2 p { padding-top: 15px; font-size: 18px; }
+        .benefit_box1:hover { cursor: pointer; transition: all 0.5s ease; transform: scale(1.2); }
+        .benefit_box1 img { min-width: 100%; min-height: 100%; transform: scale(1); transition: all 0.5s ease; }
+        .benefit_box1 img:hover { transform: scale(1.2); }
+        .benefit_box2:hover { cursor: pointer; transition: all 0.5s ease; transform: scale(1.2); }
+
+        #white_space2 { width: 100%; height: 1100px; background-color: white; margin-top: 250px; font-family: 'Public Sans', sans-serif; }
+        #white_space2 h1:nth-of-type(1) { font-size: 45px; padding-top: 50px; float: left; }
+        #white_space2 h1:nth-of-type(2) { font-size: 45px; padding-top: 65px; }
+        #white_space2 p:nth-of-type(1) { float: right; font-size: 24px;  }
+        #membership_selection { width: 1320px; height: 1000px; margin: 0 auto; }
+        #membership_selection h3 { font-size: 20px; padding-top: 50px; }
+        #membership_selection h3:nth-of-type(1) { clear: both; }
+        #membership_selection p:nth-of-type(2) { padding-top: 20px; }
+        #membership_selection p:nth-of-type(3) { padding-top: 20px; }
+        #membership_selection p:nth-of-type(4) { padding-top: 20px; }
+        #membership_selection .bottom_line4 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray; padding-top: 50px; }
+
+
     </style>
 </head>
 <body>
@@ -184,11 +213,82 @@
 
                     <div class="bottom_line2"></div>
                     <h1>Membership benefits</h1>
+                    <div id="benefit_container1">
+                        <div class="benefit_box1">
+                            <img src="img/sub/museum_exhibition.jpg" alt="혜택1">
+                            <h3>Unlimited entry to exhibitions</h3>
+                            <p>Visit every exhibition as many times as you want.</p>
+                        </div>
+                        <div class="benefit_box1">
+                            <img src="img/sub/museum_event.jpg" alt="혜택2">
+                            <h3>Members' events</h3>
+                            <p>From out-of-hours exhibition viewings to a variety of on-site and online events.</p>
+                        </div>
+                    </div>
+                    <div class="bottom_line3"></div>
+                    <div id="benefit_container2">
+                        <div class="benefit_box2">
+                            <img src="img/sub/museum_content.jpg" alt="혜택3">
+                            <h3>Members' exclusive content</h3>
+                            <p>Explore the British Museum Magazine archive, watch special Members' YouTube videos and more.</p>
+                        </div>
+                        <div class="benefit_box2">
+                            <img src="img/sub/museum_library.jpg" alt="혜택4">
+                            <h3>Members' Room</h3>
+                            <p>Enjoy an exclusive space overlooking the Great Court.</p>
+                        </div>
+                        <div class="benefit_box2">
+                            <img src="img/sub/museum_cafe.png" alt="혜택5">
+                            <h3>Member discounts</h3>
+                            <p>10% off purchases in the Museum's shops, cafés and restaurants.</p>
+                        </div>
+                    </div>
 
 
                 </div>
 
-                
+            </div>
+
+            <div id="white_space2">
+                <div id="membership_selection">
+                    <h1>Great reason to join</h1>
+                    <p>
+                        Each visit to the Museum is different. 
+                        I notice new things every time I return.
+                        Unlimited access to the exhibitions as
+                        a Member is great. I know I can take
+                        my time and even come back for a
+                        second (or third!) look. 
+                    </p>
+
+                    <h3>Enjoy your benefits immediately</h3>
+                    <p>
+                        As soon as you join, you can begin enjoying the benefits of Membership.<br>
+                        Members do not need to book for the permanent collection or our exhibitions.<br> 
+                        Visit the Membership Desk in the Great Court and show your Membership receipt<br>
+                        email and a form of identification for your temporary card to access Membership benefits straight away.
+                    </p>
+
+                    <h3>Visit again and again</h3>
+
+                    <p>
+                        The British Museum exhibitions are exceptional. As a Member, you can return to<br>
+                        each exhibition as many times as you want. Add a guest facility or an additional<br>
+                        cardholder to treat someone special and share your passion for the Museum.
+                    </p>
+
+                    <h3>Help the Louvre Museum be a museum of the world, for the world</h3>
+
+                    <p>
+                        Your Membership fee is a donation to The Louvre Museum Friends which enables us<br>
+                        to support the work of the Museum. From loaning objects around the France and<br>
+                        the rest of the world and conducting academic research,<br>
+                        the scope of our work couldn't be achieved without additional support. 
+                    </p>
+                    <div class="bottom_line4"></div>
+
+                    <h1>Choose your Membership</h1>
+                </div>
             </div>
         </section>
 
