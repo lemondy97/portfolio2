@@ -63,8 +63,39 @@
                             <li><a href="sub.html">Membership</a></li>
                             <li><a href="sub.html">Support Us</a></li>
                         </ul>
+                        <div class="menu_icon">
+                            <img src="img/main/menu_icon.png" alt="메뉴 아이콘">
+                        </div>
                     </nav>
                 </header>
+
+                <div id="reveal_menu">
+                    <button class="disappear_menu">X</button>
+                    <ul>
+                        <li><a href="sub.html">Visit</a></li>
+                        <li><a href="sub.html">Explore</a></li>
+                        <li><a href="sub.html">Collection</a></li>
+                        <li><a href="sub.html">Membership</a></li>
+                        <li><a href="sub.html">Support Us</a></li>
+                    </ul>
+                </div>
+
+                <script>
+                    $(document).ready(function(){
+                        $()
+                        $('.menu_icon').click(function(){
+                            $('#reveal_menu').css('opacity', '1');
+                            $('#reveal_menu').css('width', '100%');
+                            $('html, body').addClass('hidden')
+                        });
+                        $('.disappear_menu').click(function(){
+                            $('#reveal_menu').css('opacity', '0');
+                            $('#reveal_menu').css('width', '0%');
+                            $('html', 'body').remveClass('hidden');
+                        });
+                    });
+                </script>
+
                 <div id="reservation_space">
                     <div class="blank_space"></div>
                     <div class="rv_menu">                        
