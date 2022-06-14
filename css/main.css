@@ -164,11 +164,11 @@
         
         
         #souvenir_space .souvenir_box1 { background: url(../img/main/museum_souvenir1.png); width: 100%; min-height: 90%;
-                                         height: auto; position: absolute; top: 0; z-index: 0; background-repeat: no-repeat; background-position: center; }
+                                         height: auto; position: absolute; top: 0; z-index: 0; background-repeat: no-repeat; background-position: center;}
         #souvenir_space .souvenir_box2 { background: url(../img/main/museum_souvenir2.png); width: 100%; min-height: 88.8%; 
-                                         height: auto; position: absolute; top: 0; z-index: 0; background-repeat: no-repeat;  background-position: center; }
+                                         height: auto; position: absolute; top: 0; z-index: 0; background-repeat: no-repeat;  background-position: center;}
         #souvenir_space .souvenir_box3 { background: url(../img/main/museum_souvenir3.png); width: 100%; min-height: 94.5%; 
-                                         height: auto;  position: absolute; top: 0; z-index: 0; background-repeat: no-repeat;  background-position: center; }
+                                         height: auto;  position: absolute; top: 0; z-index: 0; background-repeat: no-repeat;  background-position: center;}
         #souvenir_space .guide_information { display: inline-block; }
         #souvenir_space .product_name1 { color: #fff; text-align: center; }
         #souvenir_space .product_name2 { text-align: center; }
