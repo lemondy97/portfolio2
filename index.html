@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/mobile_common.css">
     <link rel="stylesheet" href="css/tablet_common.css">
-    <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mobile_size.css">
     <link rel="stylesheet" href="css/tablet_size.css">
     
@@ -54,7 +54,7 @@
 
 
                 <header>
-                    <h1 class="main_subject"><a href="#">Louvre</a></h1>
+                    <h1 class="main_subject"><a href="https://lemondy97.github.io/portfolio2/">Louvre</a></h1>
                     <nav>
                         <ul id="menu">
                             <li><a href="sub.html">Visit</a></li>
@@ -67,34 +67,21 @@
                             <img src="img/main/menu_icon.png" alt="메뉴 아이콘">
                         </div>
                     </nav>
+                    <div id="reveal_menu">
+                        <button class="disappear_menu">X</button>
+                        <ul>
+                            <li><a href="sub.html">Visit</a></li>
+                            <li><a href="sub.html">Explore</a></li>
+                            <li><a href="sub.html">Collection</a></li>
+                            <li><a href="sub.html">Membership</a></li>
+                            <li><a href="sub.html">Support Us</a></li>
+                        </ul>
+                    </div>
                 </header>
 
-                <div id="reveal_menu">
-                    <button class="disappear_menu">X</button>
-                    <ul>
-                        <li><a href="sub.html">Visit</a></li>
-                        <li><a href="sub.html">Explore</a></li>
-                        <li><a href="sub.html">Collection</a></li>
-                        <li><a href="sub.html">Membership</a></li>
-                        <li><a href="sub.html">Support Us</a></li>
-                    </ul>
-                </div>
 
-                <script>
-                    $(document).ready(function(){
-                        $()
-                        $('.menu_icon').click(function(){
-                            $('#reveal_menu').css('opacity', '1');
-                            $('#reveal_menu').css('width', '100%');
-                            $('html, body').addClass('hidden')
-                        });
-                        $('.disappear_menu').click(function(){
-                            $('#reveal_menu').css('opacity', '0');
-                            $('#reveal_menu').css('width', '0%');
-                            $('html', 'body').remveClass('hidden');
-                        });
-                    });
-                </script>
+
+                <script src="js/Nav_mobile.js"></script>
 
                 <div id="reservation_space">
                     <div class="blank_space"></div>
@@ -508,7 +495,7 @@
         <footer>
 
             <div class="footer_container">
-                <h1 class="logo"><a href="#">Louvre</a></h1>
+                <h1 class="logo"><a href="https://lemondy97.github.io/portfolio2/">Louvre</a></h1>
                 <ul>
                     <li class="footer_subject"><a href="#">The public establishment</a></li>
                     <li>Visit rules</li>

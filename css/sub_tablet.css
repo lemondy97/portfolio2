@@ -7,19 +7,19 @@
         #blank_space { width: 100%; height: 8%; position: relative; }
         #blank_space h1 { color: #fff; font-size: 70px; font-family: 'Fraunces', serif; position: absolute; top: 40%; left: 30%; text-shadow: 3px 3px 3px #555; }
         #white_space1 { width: 100%; height: 335vh; background-color: white; font-family: 'Public Sans', sans-serif; text-align: center; }
-        #white_space1 h1:nth-of-type(1) { font-size: 30px; padding-top: 50px; text-align: center; }
+        #white_space1 h1:nth-of-type(1) { font-size: 30px; padding-top: 50px; margin-left: 20%; }
         #white_space1 h1:nth-of-type(2) { font-size: 45px; padding-top: 60px; }
         #white_space1 b { text-decoration: underline; }
         #white_space1 a { color:#333; }
         
         #membership_explain { width: 100%; height: 100%; margin: 0 auto; }
         #membership_explain a:visited { color: #333; }
-        #membership_explain .membership_options { font-size: 20px; padding-top: 40px; }
+        #membership_explain .membership_options { font-size: 20px; padding-top: 40px; margin-right: 25%; }
         .membership_options .option1 { border-top: 1.5px solid lightgray; border-bottom: 1.5px solid lightgray; padding-top: 22px; }
         .membership_options .option2 { border-bottom: 1.5px solid lightgray; padding-top: 22px; }
         .membership_options .move_page { margin-left: 275px; cursor: pointer; }
-        #membership_explain .small_subject { color: #333; font-size: 20px; font-weight: 500; float: left; padding-top: 50px; cursor: pointer; }
-        #membership_explain .share_sns { color: #333; font-size: 20px; font-weight: 500; float: right; padding-top: 30px; }
+        #membership_explain .small_subject { color: #333; font-size: 20px; margin-left: 6%; font-weight: 500; float: left; padding-top: 50px; cursor: pointer; }
+        #membership_explain .share_sns { color: #333; font-size: 20px; margin-right: 6%; font-weight: 500; float: right; padding-top: 30px; }
         .share_sns img { cursor: pointer; vertical-align: middle; }
         #membership_explain .bottom_line1 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray; padding-top: 100px; }
         #membership_explain p:nth-of-type(3) { font-size: 19px; padding-top: 50px; clear: both; }
@@ -30,27 +30,29 @@
         #membership_explain .bottom_line2 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray; padding-top: 50px; }
         #membership_explain .bottom_line3 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray; padding-top: 75px; }
 
-        #membership_explain #benefit_container1 { width: 100%; margin: 0 auto; display: flex; justify-content: space-between; padding-top: 75px; text-align: left; }
-        #benefit_container1 .benefit_box1 { word-break: break-all; }
-        #membership_explain #benefit_container2 { width: 100%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; padding-top: 100px; text-align: left; }
-        #benefit_container2 .benefit_box2 { word-break: break-all; margin-top: 10%; }
+        #membership_explain #benefit_container1 { width: 100%; margin: 0 auto; display: flex; justify-content: space-around; padding-top: 75px; text-align: center; }
+        #benefit_container1 .benefit_box1 { word-break: break-all; width: 45%; }
+        #membership_explain #benefit_container2 { width: 100%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; padding-top: 100px; text-align: center; }
+        #benefit_container2 .benefit_box2 { word-break: break-all; margin-top: 10%; margin-left: 2.5%; }
         #benefit_container1 h3 { padding-top: 20px; font-size: 22px; }
         #benefit_container1 p { padding-top: 15px; font-size: 18px; }
         #benefit_container2 h3 { padding-top: 15px; font-size: 22px; }
         #benefit_container2 p { padding-top: 15px; font-size: 18px; }
         .benefit_box1:hover { cursor: pointer; transition: all 0.5s ease; }
         .benefit_box2:hover { cursor: pointer; transition: all 0.5s ease; }
-        .benefit_box1 .benefit_content1 { width: 100%; height: 578px; background: gainsboro; }
+        .benefit_box1 .benefit_content1 { width: 100%; height: 428px; background: gainsboro; }
+        .benefit_content1 img { width: 100%; }
         .benefit_box1 .hover_box1 { display: none; }
         .benefit_content1:hover ~ .hover_box1 { display: none; }
         .benefit_box2 .benefit_content2 { width: 100%; height: 434px; background: gainsboro; }
+        .benefit_content2 img { width: 100%; }
         .benefit_box2 .hover_box2 { display: none; }
         .benefit_content2:hover ~ .hover_box2 { display: none; }
 
         #white_space2 { width: 100%; height: 187vh; background-color: white; margin-top: 250px; font-family: 'Public Sans', sans-serif; }
-        #white_space2 h1:nth-of-type(1) { font-size: 45px; padding-top: 50px; float: left; }
+        #white_space2 h1:nth-of-type(1) { font-size: 45px; padding-top: 50px; margin-left: 30%; }
         #white_space2 h1:nth-of-type(2) { font-size: 45px; padding-top: 65px; }
-        #white_space2 p:nth-of-type(1) { font-size: 26px; float: right; font-family: 'Cormorant Unicase', serif; margin: 50px 0 0 50px; text-align: center; }
+        #white_space2 p:nth-of-type(1) { font-size: 26px; font-family: 'Cormorant Unicase', serif; margin-top: 50px; text-align: center; padding-right: 275px; }
         #white_space2 span:nth-of-type(1) { font-size: 19px; }
         #membership_selection { width: 100%; height: 100%; margin: 0 auto; text-align: center; }
         #membership_selection h3 { font-size: 20px; }
@@ -69,8 +71,8 @@
         .choose_content:hover ~ .hover_box3 { display: none; }
         .choose_box .choose_options { padding-top: 10px; }
 
-        #white_space3 { width: 75%; height: 275px; margin: 0 auto; background-color: white; margin-top: 125px; font-family: 'Public Sans', sans-serif; text-align: center; }
-        #white_space3 h1 { font-size: 45px; text-align: center; }
+        #white_space3 { width: 75%; height: 275px; margin: 0 auto; background-color: white; margin-top: 125px; font-family: 'Public Sans', sans-serif; text-align: left; }
+        #white_space3 h1 { font-size: 45px; text-align: center; margin-left: 18%; }
         #white_space3 p { font-size: 20px; margin-top: 45px; margin-right: 65px; }
         #white_space3 p > button { width: 260px; height: 45px; background-color: #222; color: #fff; margin-top: 25px; font-size: 18px; transition: all 0.5s ease; }
         #white_space3 p > button:hover { background-color: #fff; color:#222; cursor: pointer; }

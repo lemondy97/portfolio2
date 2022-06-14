@@ -14,11 +14,20 @@
         #wrap { width: 100%; height: auto; margin: 0 auto; position: relative; overflow-x: hidden; }
         header { width: 100vmin; height: 100vh; margin: 0 auto; color: #fff; position: absolute; z-index: 6; top: 0; left: 0; right: 0; }
         header .main_subject { width: 16%; height: 50%; font-size: 100px; float: left; font-family: 'Cormorant Unicase', serif;
-                               padding-top: 10%; margin-left: 16%; }
-        header #menu { width: 500px; display: flex; justify-content: space-between; float: right; font-family: 'Fraunces', serif;
-                       padding-top: 75px; margin-right: 100px; font-size: 20px; }
+                               padding-top: 10%; margin-left: 26%; }
+        header #menu { display: none;}
+
+        header .menu_icon { display: block; cursor: pointer; position: absolute; top: 5%; left: 4%; }
         
-        .hidden { height: 100%; min-height: 100%;  overflow: hidden; touch-action: none; }
+        .hide {  }
+        #reveal_menu { opacity: 0; width: 0%; height: 100%; font-family: 'Fraunces', serif; background-color: #000; overflow: hidden;
+                       transition: all 0.5s ease; position: absolute; top: 0; left: 0; z-index: 5; }
+        #reveal_menu ul { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+        #reveal_menu ul li { width: 100%; text-align: center; font-size: 40px; padding-top: 10%; }
+        #reveal_menu li a { width: 100%; transition: all 0.5s ease; }
+        #reveal_menu li a:hover { background: #ffc107; }
+        #reveal_menu .disappear_menu { position: absolute; top: 5%; right: 15%; border: none; background-color: #000; color: #fff;
+                                       font-size: 50px; font-weight: bold; cursor: pointer; }
 
         #slider { width: 100%; height: 154.4vh; margin: 0 auto; text-align: center; }
         #slider .main_rotating_image { max-width: 100%; position: relative; margin: auto; height: 100%; background-position: center; overflow: hidden; }
@@ -41,8 +50,8 @@
         #slider #reservation_space { width: 100%; height: 50vh; position: absolute; top: 104.4vh; 
                                      left: 0; background: white; color: #333; }
         #slider .rv_menu { width: 100%; height: 50%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; font-family: 'Fraunces', serif; }
-        #slider .rv_box { width: 100%; height: 50%; font-family: 'Fraunces', serif; border-bottom: 2px solid lightgray; }
-        #slider .rv_payment { width: 100%; height: 50%; background-color: #222; margin-left: 25px; color: #fff; font-family: 'Fraunces', serif; }
+        #slider .rv_box { width: 100%; height: 50%; margin-left: 0px; font-family: 'Fraunces', serif; border-bottom: 2px solid lightgray; }
+        #slider .rv_payment { width: 75%; height: 50%; margin-right: 25px; background-color: #222; margin-left: 25px; color: #fff; font-family: 'Fraunces', serif; }
         .rv_payment button { width: 40%; height: 26%; background: rgb(210, 210, 210); cursor: pointer; font-family: 'Bree Serif', serif; }
         .rv_payment button:hover { background: rgb(185, 185, 210); }
         #reservation_space select { font-family: 'Public Sans', sans-serif; margin-top: 5%; }
