@@ -2,13 +2,16 @@
 
         @media (min-width:600px) and (max-width:1199px){
 
-        section { width: 100%; height: 575vh; background-image: url(../img/sub/sub_main.jpg); background-position: center; background-attachment: fixed; 
+        #slider .main_rotating_image img { width: 100%; height: 100%; }
+        #slider { height: 290px; overflow: hidden; }
+
+        section { width: 100%; height: 590vh; background-image: url(../img/sub/sub_main.jpg); background-position: center; background-attachment: fixed; 
         	       background-repeat: no-repeat; background-size: cover;}
         #blank_space { width: 100%; height: 8%; position: relative; }
         #blank_space h1 { color: #fff; font-size: 70px; font-family: 'Fraunces', serif; position: absolute; top: 40%; left: 30%; text-shadow: 3px 3px 3px #555; }
         #white_space1 { width: 100%; height: 260vh; background-color: white; font-family: 'Public Sans', sans-serif; text-align: center; }
         #white_space1 h1:nth-of-type(1) { font-size: 30px; padding-top: 50px; margin-left: 20%; }
-        #white_space1 h1:nth-of-type(2) { font-size: 45px; padding-top: 60px; }
+        #white_space1 h1:nth-of-type(2) { font-size: 45px; padding-top: 60px; margin-left: 0; }
         #white_space1 b { text-decoration: underline; }
         #white_space1 a { color:#333; }
         
@@ -25,19 +28,19 @@
         #membership_explain p:nth-of-type(3) { font-size: 19px; padding-top: 50px; clear: both; padding-left: 0; }
         #membership_explain p:nth-of-type(4) { font-size: 19px; padding-top: 50px; padding-left: 0; }
         #membership_explain p:nth-of-type(5) { font-size: 19px; padding-top: 50px; padding-left: 0; }
-        #membership_explain ul { padding-top: 50px; font-size: 19px; padding-left: 75px; text-align: left; }
+        #membership_explain ul { padding-top: 50px; font-size: 19px; padding-left: 20%; text-align: left; }
         #membership_explain ul li { list-style: circle; }
         #membership_explain .bottom_line2 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray; padding-top: 50px; }
         #membership_explain .bottom_line3 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray;  }
 
         #membership_explain #benefit_container1 { width: 100%; margin: 0 auto; display: flex; justify-content: space-around; padding-top: 75px; text-align: center; }
-        #benefit_container1 .benefit_box1 { word-break: break-all; width: 45%; margin-bottom: -15%; }
+        #benefit_container1 .benefit_box1 { word-break: break-all; width: 40%; margin-bottom: -15%; }
         #membership_explain #benefit_container2 { width: 100%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center; }
-        #benefit_container2 .benefit_box2 { word-break: break-all; width: 30%; margin-bottom: -8.5%; }
+        #benefit_container2 .benefit_box2 { word-break: break-all; width: 27%; margin-bottom: -8.5%; }
         #benefit_container1 h3 { padding-top: 20px; font-size: 22px; }
-        #benefit_container1 p { padding-top: 15px; font-size: 18px; }
+        #benefit_container1 p { padding-top: 15px; font-size: 16px; }
         #benefit_container2 h3 { padding-top: 15px; font-size: 22px; }
-        #benefit_container2 p { padding-top: 15px; font-size: 18px; }
+        #benefit_container2 p { padding-top: 15px; font-size: 16px; }
         .benefit_box1:hover { cursor: pointer; transition: all 0.5s ease; }
         .benefit_box2:hover { cursor: pointer; transition: all 0.5s ease; }
         .benefit_box1 .benefit_content1 { width: 100%; height: 428px; background: gainsboro; }
@@ -49,10 +52,10 @@
         .benefit_box2 .hover_box2 { display: none; }
         .benefit_content2:hover ~ .hover_box2 { display: none; }
 
-        #white_space2 { width: 100%; height: 187vh; background-color: white; margin-top: 250px; font-family: 'Public Sans', sans-serif; }
-        #white_space2 h1:nth-of-type(1) { font-size: 45px; padding-top: 50px; margin-left: 28%; padding-left: 0; }
+        #white_space2 { width: 100%; height: 202vh; background-color: white; margin-top: 250px; font-family: 'Public Sans', sans-serif; }
+        #white_space2 h1:nth-of-type(1) { font-size: 45px; padding-top: 50px; width: 100%; padding-left: 0; }
         #white_space2 h1:nth-of-type(2) { font-size: 45px; padding-top: 65px; }
-        #white_space2 p:nth-of-type(1) { font-size: 26px; font-family: 'Cormorant Unicase', serif; margin-top: 50px; text-align: center; padding-right: 23%; }
+        #white_space2 p:nth-of-type(1) { font-size: 26px; font-family: 'Cormorant Unicase', serif; margin-top: 50px; text-align: center; width: 100%; }
         #white_space2 span:nth-of-type(1) { font-size: 19px; }
         #membership_selection { width: 100%; height: 100%; margin: 0 auto; text-align: center; }
         #membership_selection h3 { font-size: 20px; padding-left: 0; }
@@ -65,7 +68,8 @@
         #membership_selection .bottom_line4 { width: 100%; height: 25px; border-bottom: 1.5px solid lightgray; padding-top: 50px; }
 
         #membership_selection #choose_container { width: 100%; margin: 0 auto; display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 50px; }
-        #choose_container .choose_box { cursor: pointer; margin-top: 10%; }
+        #choose_container .choose_box { cursor: pointer; margin-top: 10%; width: 35%; }
+        .choose_box img { width: 100%; height: 80%; }
         .choose_box .choose_content { width: 100%; height: 250px; background-color: gainsboro; }
         .choose_box .hover_box3 { display: none; }
         .choose_content:hover ~ .hover_box3 { display: none; }
