@@ -116,7 +116,7 @@
 
         #event_space { width: 100%; height: 881px; position: relative; background-color: rgba(5, 5, 5, 0.85); }
         #event_space h3 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-top: 90px; font-size: 25px; }
-        #event_space h1 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-bottom: 90px; font-size: 35px; }
+        #event_space h1 { text-align: center; color: #fff; font-family: 'Cormorant Unicase', serif; padding-bottom: 90px; font-size: 32px; }
 
         #rotating_banner_wrap { width: 850px; height: 600px; margin: auto; position: relative; overflow: hidden;
                                              cursor: pointer; transition: all 1s ease; background: rgba(25, 25, 25, 0.8); }
@@ -147,7 +147,7 @@
         #Tour_guide_explain .tour_guides { float: left; }
 
         #Tour_guide_explain .tour_guide_container { width: 100%; height: 60%; display: flex; flex-wrap: wrap; justify-content: center; font-family: 'Public Sans', sans-serif; }
-        #Tour_guide_explain .tour_guide_box { width: 45%; height: 30%; background-color: #fff; margin-left: 25px; border-radius: 20px;
+        #Tour_guide_explain .tour_guide_box { width: 43%; height: 25%; background-color: #fff; margin-left: 25px; border-radius: 20px;
                                               box-shadow: 5px 5px 5px rgba(25, 25, 25, 0.65); margin-top: 2%; }
         .tour_guide_box h3 { color: #333; display: inline-block; text-align: center; font-family: 'Fraunces', serif; }
         .tour_guide_box .tour_guides { vertical-align: top; }
@@ -172,7 +172,7 @@
 
         #sns_space { width: 100%; height: 123.9vh; position: relative; }
         #sns_space h3 { text-align: center; padding-top: 140px; font-family: 'Cormorant Unicase', serif; font-size: 22px; }
-        #sns_space h1 { text-align: center; padding-bottom: 125px; font-family: 'Cormorant Unicase', serif; font-size: 40px; }
+        #sns_space h1 { text-align: center; padding-bottom: 125px; font-family: 'Cormorant Unicase', serif; font-size: 35px; }
 
 
         .sns_image1, .sns_image2, .sns_image3, .sns_image4, .sns_image5 { width: 50%; height: 50%; background-size: cover; background-position: center; cursor: pointer; transition: all 1s ease; position: relative; }
